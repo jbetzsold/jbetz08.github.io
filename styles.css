@@ -1,11 +1,12 @@
 body {
+    font-family: 'Oswald', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 h1, footer {
-    color: white;
-    background-color: orangered;
+    color: black;
+    background-color: goldenrod;
 }
 
 ul {
