@@ -1,4 +1,4 @@
-@media (min-width: 401px) {
+@media (min-width: 593px) {
 
     body {
         font-family: 'Oswald', sans-serif;
@@ -42,7 +42,7 @@
 
     #myLinks a {
         background-color: black;
-        font-size: .8rem;
+        font-size: 1rem;
         align-content: center;
     }
 
@@ -72,20 +72,18 @@
     }
     
     h2 {
+        font-size: 1.8rem;
         text-align: center;
     }
     
     footer {
         background-color: forestgreen;
         color: white;
-    }
-    
-    footer img {
-        max-width: 50%;
+        padding: 5px;
     }
     
     footer p {
-        font-size: 0.7rem;
+        font-size: 1rem;
         text-align: center;
     }
 
