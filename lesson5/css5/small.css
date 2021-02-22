@@ -4,6 +4,12 @@
         font-family: 'Oswald', sans-serif;
     }
 
+    #banner {
+        background-color: gold;
+        padding: 5px;
+        text-align: center;
+    }
+
     header {
         background-color: lightgreen;
         padding: 5px 0;
@@ -66,20 +72,36 @@
 
     .topnav a:hover {
         background-color: #ddd;
-        color:black;
+        color:forestgreen;
     }
 
     h2 {
         text-align: center;
     }
 
+    .hero {
+        display: block;
+        margin: 0 auto;
+        max-width: 95%;
+        max-height: 80%;
+    }
+
+    .articleInfo {
+        background-color: lightgrey;
+        border-radius: 15px;
+        padding: 5px;
+    }
+
+    .articleInfo img {
+        display: block;
+        margin: 0 auto;
+        max-width: 75%;
+    }
+
     footer {
         background-color: forestgreen;
         color: white;
-    }
-
-    footer img {
-        max-width: 50%;
+        padding: 2px;
     }
 
     footer p {

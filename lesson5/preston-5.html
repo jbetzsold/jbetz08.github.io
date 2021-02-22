@@ -4,42 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preston Idaho Weather</title>
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css5/small.css">
+    <link rel="stylesheet" href="css5/medium.css">
+    <link rel="stylesheet" href="css5/large.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="images/favicon copy.ico">
+    <link rel="shortcut icon" href="img5/faviconweather.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">        
 </head>
 <body>
-    <header>
-        <img src="images/weatherLogo copy.png" alt="logo">
+    <header id="yes">
+        <img src="img5/weatherLogo.png" alt="logo">
         <section class="headings">
             <h1>Southeast Idaho Weather</h1>
             <div class="m">Website Motto: Here for you on a rainy day</div>
         </section>
     </header>
     <nav class="topnav">
-        <!-- ul element tag below is a child of topnav  -->
-        <ul id="myLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="target-audience.html">Target Audience</a></li>
-            <li><a href="color-scheme.html">Color Scheme</a></li>
-            <li><a href="typography.html">Typography</a></li>
-        </ul>
         <!-- anchor element below is a child of topnav  -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
+        <!-- ul element tag below is a child of topnav  -->
+        <ul id="myLinks">
+            <li><a href="">Home</a></li>
+            <li><a href="preston-5.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="">Storm Center</a></li>
+            <li><a href="">Gallery</a></li>
+        </ul>
     </nav>
     <main>
         <h2>Preston Idaho</h2>
-        <img src="" alt="hero image">
+        <img class="hero" src="img5/preston-hero-image.jpg" alt="hero image">
         <h3>Weather Summary</h3>
         <p>Information about weather summary</p>
         <h3>Five Day Forecast</h3>
-        <h4>Article Title</h4>
-        <p>Information about article</p>
+        <div class="articleInfo">
+            <img src="img5/preston-article-img.jpg" alt="campfire joy">
+            <h4>Article Title</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
+                pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
+                Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
+                in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent
+                per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut 
+                vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar vitae dolor.
+                Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer feugiat 
+                faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc. 
+                Phasellus bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis. 
+                Cras pharetra mi tristique sapien vestibulum lobortis. Nam eget bibendum metus, 
+                non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.
+            </p>
+        </div>
     </main>
     <footer>
         <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>
@@ -50,7 +67,7 @@
             <span id="year"></span>.
         </p>
         
-        <script src="js/scripts.js"></script>
+        <script src="js5/scripts.js"></script>
     </footer>
 </body>
 </html>

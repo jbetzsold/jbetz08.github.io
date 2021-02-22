@@ -31,6 +31,7 @@ switch (today) {
         document.querySelector('#dayofweek').textContent = 'Thursday';
         break;
     case 5:
+        document.body.onload = addElement;
         document.querySelector('#dayofweek').textContent = 'Friday';
         break;
     case 6:
@@ -79,4 +80,19 @@ switch (month) {
         break;
     default:
         document.querySelector('#month').textContent = 'Something is messed up with month';
+}
+
+
+function addElement () {
+
+    const newDiv = document.createElement("div");
+    newDiv.setAttribute("id", "banner");
+
+    const newContent = document.createTextNode("Saturday = Preston Pancakes in the Park! 9:00 a.m.\n Saturday at the city park pavilion.");
+    newDiv.appendChild(newContent);
+
+    const currentDiv = document.getElementById("yes");
+
+    document.body.insertBefore(newDiv, currentDiv);
+
 }

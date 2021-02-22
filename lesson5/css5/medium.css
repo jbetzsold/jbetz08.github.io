@@ -1,7 +1,14 @@
-@media (min-width: 401px) {
+@media (min-width: 643px) {
 
     body {
         font-family: 'Oswald', sans-serif;
+    }
+
+    #banner {
+        background-color: gold;
+        padding: 5px;
+        text-align: center;
+
     }
     
     header {
@@ -42,7 +49,7 @@
 
     #myLinks a {
         background-color: black;
-        font-size: .8rem;
+        font-size: 1rem;
         align-content: center;
     }
 
@@ -50,10 +57,6 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
         margin: 0;
-    }
-
-    ul {
-        padding-inline-start: 0;
     }
 
     .topnav a {
@@ -68,24 +71,31 @@
     
     .topnav a:hover {
         background-color: #ddd;
-        color:black;
+        color:forestgreen;
+    }
+
+    .topnav a:active {
+        background-color: goldenrod;
     }
     
     h2 {
+        font-size: 1.8rem;
         text-align: center;
+    }
+
+    .articleInfo img {
+        float: right;
+        max-width: 50%;
     }
     
     footer {
         background-color: forestgreen;
         color: white;
-    }
-    
-    footer img {
-        max-width: 50%;
+        padding: 5px;
     }
     
     footer p {
-        font-size: 0.7rem;
+        font-size: 1rem;
         text-align: center;
     }
 
