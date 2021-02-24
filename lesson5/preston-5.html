@@ -28,7 +28,7 @@
         <!-- ul element tag below is a child of topnav  -->
         <ul id="myLinks">
             <li><a href="">Home</a></li>
-            <li><a href="preston-5.html">Preston</a></li>
+            <li><a class="wayfinder" href="preston-5.html">Preston</a></li>
             <li><a href="">Soda Springs</a></li>
             <li><a href="">Fish Haven</a></li>
             <li><a href="">Storm Center</a></li>
@@ -38,9 +38,44 @@
     <main>
         <h2>Preston Idaho</h2>
         <img class="hero" src="img5/preston-hero-image.jpg" alt="hero image">
-        <h3>Weather Summary</h3>
-        <p>Information about weather summary</p>
-        <h3>Five Day Forecast</h3>
+
+        <div class="weatherSummary">
+            <h3>Weather Summary</h3>
+            <p>Currently: Cloudy</p>
+            <p>Temperature: 53F</p>
+            <p>Humidity: 23%</p>
+            <p>Precipitation: 11%</p>
+            <p>Wind Speed: 2 MPH</p>
+        </div>
+        
+        <div class="fiveDayForecast">
+            <h3>Five Day Forecast</h3>
+            <table style="width:100%">
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td><img src="img5/5daysummarycloud.png" alt="cloudy"></td>
+                    <td><img src="img5/5daysummarycloud.png" alt="cloudy"></td>
+                    <td><img src="img5/5daysummarycloud.png" alt="cloudy"></td>
+                    <td><img src="img5/5daysummarycloud.png" alt="cloudy"></td>
+                    <td><img src="img5/5daysummarycloud.png" alt="cloudy"></td>
+                </tr>
+                <tr>
+                    <td>High: 55F <br> Low: 34F</td>
+                    <td>High: 56F <br> Low: 37F</td>
+                    <td>High: 53F <br> Low: 35F</td>
+                    <td>High: 51F <br> Low: 29F</td>
+                    <td>High: 59F <br> Low: 39F</td>
+                </tr>
+            </table>
+
+        </div>
+        
         <div class="articleInfo">
             <img src="img5/preston-article-img.jpg" alt="campfire joy">
             <h4>Article Title</h4>
@@ -57,6 +92,30 @@
                 non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.
             </p>
         </div>
+
+        <h3>Contact Us</h3>
+        <div class="contactUs">
+            <div class="rcolumn">
+                <p>
+                    123 Main St. Preston, ID
+                    <br>
+                    seiweather@gmail.com 
+                    <br>
+                    208-123-4567
+                    <br>
+                    <br>
+                    Follow us on social platforms:
+                </p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <br>
+            </div>
+            <div class="lcolumn">
+                <img src="img5/mapPlaceholder.png" alt="map placeholder">
+            </div>
+        </div>
+
     </main>
     <footer>
         <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>

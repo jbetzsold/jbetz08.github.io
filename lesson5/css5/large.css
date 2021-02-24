@@ -3,6 +3,8 @@
     body {
         font-family: 'Oswald', sans-serif;
         max-width: 1050px;
+        margin-left:auto;
+        margin-right:auto;
     }
 
     #banner {
@@ -10,14 +12,6 @@
         padding: 5px;
         text-align: center;
 
-    }
-    
-    header {
-        background-color: lightgreen;
-        padding: 5px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     
     header img {
@@ -38,7 +32,7 @@
     .m {
         font-style: italic;
         letter-spacing: 1pt;
-        color: forestgreen;
+        color: whitesmoke;
         margin-left: 20px;
         font-size: .9rem;
     }
@@ -58,6 +52,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
         margin: 0;
+        padding: 0px;
     }
 
     .topnav a {
@@ -75,8 +70,9 @@
         color:forestgreen;
     }
 
-    .topnav a:active {
-        background-color: goldenrod;
+    main {
+        position:relative;
+        text-align: center;
     }
     
     h2 {
@@ -84,9 +80,45 @@
         text-align: center;
     }
 
+    .weatherSummary {
+        position: absolute;
+        top: 90px;
+        left: 50px;
+        max-width: 25%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #111;
+        color: white;
+        padding: 10px;
+        
+
+    }
+
+    .weatherSummary p {
+        margin: 2px;
+    }
+
     .articleInfo img {
         float: right;
         max-width: 35%;
+        margin: 7px;
+    }
+
+    .contactUs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .lcolumn {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .lcolumn img {
+        max-width: 85%;
+    }
+
+    .rcolumn {
+        grid-column: 2/3;
     }
     
     footer {
