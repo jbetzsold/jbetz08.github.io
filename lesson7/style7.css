@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1 {
+    grid-column: 2/3;
+
+}
+
+picture {
+    grid-column: 2/3;
+}
+
+picture img[data-src] {
+    filter: blur(0.2rem);
+}
+
+picture img {
+    filter: blur(0rem);
+    transition: filter 0.5s;
+}

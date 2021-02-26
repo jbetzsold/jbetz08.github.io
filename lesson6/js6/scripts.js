@@ -96,3 +96,12 @@ function addElement () {
     document.body.insertBefore(newDiv, currentDiv);
 
 }
+
+
+WebFont.load({
+    google: {
+        families: [
+            'Oswald'
+        ]
+    }
+});
