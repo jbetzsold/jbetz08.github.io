@@ -10,6 +10,7 @@ h1, footer {
 }
 
 ul {
+    grid-column: 1/3;
     grid-row: 3/4;
     list-style-type: square;
 }
