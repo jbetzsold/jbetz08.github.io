@@ -62,7 +62,6 @@
 
     .topnav a {
         color: white;
-        padding: 10px 7px;
         text-decoration: none;
         font-size: 1.1rem;
         display: block;
@@ -143,6 +142,10 @@
         max-width: 75%;
     }
 
+    main section {
+        background-color: lightgray;
+    }
+
 
 
     .fa {
@@ -183,3 +186,5 @@
         font-size: 0.7rem;
         text-align: center;
     }
+
+    
