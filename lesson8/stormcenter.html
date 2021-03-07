@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Idaho Weather</title>
+    <link rel="stylesheet" href="css8/small.css">
+    <link rel="stylesheet" href="css8/medium.css">
+    <link rel="stylesheet" href="css8/large.css">
+    <link rel="stylesheet" href="css8/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img8/faviconweather.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">        
+</head>
+<body>
+    <header id="yes">
+        <img src="img8/weatherLogo.png" alt="logo">
+        <section class="headings">
+            <h1>Southeast Idaho Weather</h1>
+            <div class="m">Website Motto: Here for you on a rainy day</div>
+        </section>
+    </header>
+    <nav class="topnav">
+        <!-- anchor element below is a child of topnav  -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <!-- ul element tag below is a child of topnav  -->
+        <ul id="myLinks">
+            <li><a href="">Home</a></li>
+            <li><a href="preston-6.html">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a class="wayfinder" href="stormcenter.html">Storm Center</a></li>
+            <li><a href="">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Report a Storm</h2>
+
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Your Contact Information</legend>
+                <label id="top">Full Name<span class="req">(required)</span>
+                    <br>
+                    <input type="text" pattern="[a-z A-Z]{5,}" class="form-control" name="name" title="Must be 5 or more alphabet characters." required>
+                </label>
+                <br>
+                <label id="top">Email
+                    <br>
+                    <input type="email" name="email" placeholder="name@gmail.com">
+                </label>
+                <br>
+                <label id="top">Phone Number<span class="req">(required)</span>
+                    <br>
+                    <input type="tel" name="tel" required>
+                </label>
+                <br>
+                <label id="top">Zip Code<span class="req">(required)</span>
+                    <br>
+                    <input type="number" name="zip" required>
+                </label>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label id="top">Storm Date<span class="req">(required)</span>
+                    <input type="date" name="date" required>
+                </label>
+                <br>
+                <label id="top" for="storm">Storm Type
+                    <input list="storms" name="storm" id="storm">
+                </label>
+                <datalist id="storms">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option> 
+                </datalist>
+                <div>
+                    <br>
+                    <label class="severity" for="rating">Storm Severity Rating: &nbsp;&nbsp;&nbsp;
+                        <br>
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    </label>
+                    <datalist id="tickmarks">
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                </div>
+                <br>
+                <div>
+                    <label id="top">Storm Region
+                        <br>
+                        <select name="region">
+                            <option value="select" select disabled>Select Region &#9662;</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
+                        </select>
+                    </label>
+                </div>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Are you in danger?</legend>
+                <label class="indanger">
+                    <input type="radio" name="danger" value="no">No
+                </label>
+                <br>
+                <label class="indanger">
+                    <input type="radio" name="danger" value="maybe">Maybe
+                </label>
+                <br>
+                <label class="indanger">
+                    <input type="radio" name="danger" value="Yes">Yes
+                </label>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Additional Information or Comments:</legend>
+                <label>
+                    <textarea id="additional" name="additional" rows="4" cols="30"></textarea>
+                </label>
+            </fieldset>
+            <br>
+
+            <input type="submit" value="Send Your Storm Report" class="submitBtn">
+        </form>
+        <br>
+        <br>
+
+        <h3>Contact Us</h3>
+        <div class="contactUs">
+            <div class="rcolumn">
+                <p>
+                    123 Main St. Preston, ID
+                    <br>
+                    seiweather@gmail.com 
+                    <br>
+                    208-123-4567
+                    <br>
+                    <br>
+                    Follow us on social platforms:
+                </p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <br>
+            </div>
+            <div class="lcolumn">
+                <img src="img8/mapPlaceholder.png" alt="map placeholder">
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>
+        <p>
+            <span id="dayofweek"></span>,
+            <span id="daynumber"></span>
+            <span id="month"></span>
+            <span id="year"></span>.
+        </p>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js8/scripts.js"></script>
+    </footer>
+    
+</body>
+</html>
