@@ -101,7 +101,7 @@ function addElement () {
 WebFont.load({
     google: {
         families: [
-            'Oswald'
+            'Oswald', 'Sans-serif'
         ]
     }
 });

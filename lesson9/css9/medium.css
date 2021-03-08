@@ -1,9 +1,5 @@
 @media (min-width: 643px) {
 
-    body {
-        font-family: 'Oswald', sans-serif;
-    }
-
     #banner {
         background-color: gold;
         padding: 5px;
