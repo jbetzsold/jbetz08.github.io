@@ -98,13 +98,13 @@ function addElement () {
 }
 
 
-WebFont.load({
+/*WebFont.load({
     google: {
         families: [
             'Oswald', 'Sans-serif'
         ]
     }
-});
+});*/
 
 
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
@@ -118,36 +118,35 @@ fetch(requestURL)
     const towns = jsonObject['towns'];
 
     for (let i = 0; i < towns.length; i++ ) {
-        let card = document.createElement('section');
-        let h2 = document.createElement('h2');
-        let p = document.createElement('p');
-        let h3 = document.createElement('h3');
-        let h4 = document.createElement('h4');
-        let h5 = document.createElement('h5');
-        let image = document.createElement('img');
+        if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
+            
+            let card = document.createElement('section');
+            let h2 = document.createElement('h2');
+            let p = document.createElement('p');
+            let h3 = document.createElement('h3');
+            let h4 = document.createElement('h4');
+            let h5 = document.createElement('h5');
+            let image = document.createElement('img');
 
-        h2.textContent = towns[i].name;
-        p.textContent = towns[i].motto
-        h3.textContent = 'Year Founded: ' + towns[i].yearFounded;
-        h4.textContent = 'Population: ' + towns[i].currentPopulation;
-        h5.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
-        image.setAttribute('src', towns[i].photo);
-        image.setAttribute('alt', towns[i].name)
+            h2.textContent = towns[i].name;
+            p.textContent = towns[i].motto
+            h3.textContent = 'Year Founded: ' + towns[i].yearFounded;
+            h4.textContent = 'Population: ' + towns[i].currentPopulation;
+            h5.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+            image.setAttribute('src', towns[i].photo);
+            image.setAttribute('alt', towns[i].name)
 
-        
-        card.appendChild(h2);
-        card.appendChild(p);
-        card.appendChild(h3);
-        card.appendChild(h4);
-        card.appendChild(h5);
-        card.appendChild(image);
+            
+            card.appendChild(h2);
+            card.appendChild(p);
+            card.appendChild(h3);
+            card.appendChild(h4);
+            card.appendChild(h5);
+            card.appendChild(image);
 
-
-        if (i == 1 && i == 5 && i == 6) {
             document.querySelector('div.cards').appendChild(card);
-        }
 
-        document.querySelector('div.cards').appendChild(card);
+        }
 
 
     }
