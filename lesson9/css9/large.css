@@ -96,10 +96,27 @@
         margin: 2px;
     }
 
-    .cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+   .cards {
+       display:grid;
+       grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .cards section {
+       display: grid;
+       
+   }
+
+   .Fish.Haven {
+       grid-column: 1/2;
+   }
+
+   .Preston {
+       grid-column: 2/3;
+   }
+
+   .Soda.Springs {
+       grid-column: 3/4;
+   }
 
     .articleInfo img {
         float: right;

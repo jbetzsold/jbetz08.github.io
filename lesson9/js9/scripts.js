@@ -121,6 +121,7 @@ fetch(requestURL)
         if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
 
             let card = document.createElement('section');
+            let info = document.createElement('div');
             let h2 = document.createElement('h2');
             let p = document.createElement('p');
             let h3 = document.createElement('h3');
@@ -137,13 +138,13 @@ fetch(requestURL)
             image.setAttribute('src', 'img9/' + towns[i].photo);
             image.setAttribute('alt', towns[i].name);
 
-            
-            card.appendChild(h2);
-            card.appendChild(p);
-            card.appendChild(h3);
-            card.appendChild(h4);
-            card.appendChild(h5);
+            card.appendChild(info);
             card.appendChild(image);
+            info.appendChild(h2);
+            info.appendChild(p);
+            info.appendChild(h3);
+            info.appendChild(h4);
+            info.appendChild(h5);
 
             document.querySelector('div.cards').appendChild(card);
 

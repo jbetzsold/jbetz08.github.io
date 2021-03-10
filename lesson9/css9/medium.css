@@ -72,6 +72,25 @@
         text-align: center;
     }
 
+    .cards section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cards section:nth-child(odd) {
+        flex-direction:row-reverse
+    }
+
+    section img {
+        margin: 0 auto;
+    }
+
+    section div {
+        margin: 0 auto;
+    }
+
+
+
     .articleInfo img {
         float: right;
         max-width: 50%;

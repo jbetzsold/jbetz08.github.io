@@ -130,9 +130,26 @@ body {
         border: 1px solid black;
     }
 
+    .Fish.Haven, .Preston, .Soda.Springs{
+        padding: 10px;
+    }
+
+    .Fish.Haven h2 {
+        margin-bottom: 0;
+    }
+
+    .Preston h2 {
+        margin-bottom: 0;
+    }
+
+    .Soda.Springs h2 {
+        margin-bottom: 0;
+    }
+
     .cards section {
         border-radius: 15px;
         margin: 5px;
+        padding: 10px;
     }
 
     .articleInfo {
