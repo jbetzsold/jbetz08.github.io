@@ -122,29 +122,29 @@ fetch(requestURL)
 
             let card = document.createElement('section');
             let info = document.createElement('div');
-            let h2 = document.createElement('h2');
-            let p = document.createElement('p');
-            let h3 = document.createElement('h3');
-            let h4 = document.createElement('h4');
-            let h5 = document.createElement('h5');
+            let townName = document.createElement('h2');
+            let townMotto = document.createElement('p');
+            let founded = document.createElement('h3');
+            let pop = document.createElement('h4');
+            let rainfall = document.createElement('h5');
             let image = document.createElement('img');
 
             card.className = towns[i].name;
-            h2.textContent = towns[i].name;
-            p.textContent = towns[i].motto;
-            h3.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            h4.textContent = 'Population: ' + towns[i].currentPopulation;
-            h5.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+            townName.textContent = towns[i].name;
+            townMotto.textContent = towns[i].motto;
+            founded.textContent = 'Year Founded: ' + towns[i].yearFounded;
+            pop.textContent = 'Population: ' + towns[i].currentPopulation;
+            rainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
             image.setAttribute('src', 'img9/' + towns[i].photo);
             image.setAttribute('alt', towns[i].name);
 
             card.appendChild(info);
             card.appendChild(image);
-            info.appendChild(h2);
-            info.appendChild(p);
-            info.appendChild(h3);
-            info.appendChild(h4);
-            info.appendChild(h5);
+            info.appendChild(townName);
+            info.appendChild(townMotto);
+            info.appendChild(founded);
+            info.appendChild(pop);
+            info.appendChild(rainfall);
 
             document.querySelector('div.cards').appendChild(card);
 

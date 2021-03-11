@@ -152,6 +152,10 @@ body {
         padding: 10px;
     }
 
+    section div p {
+        font-style: italic;
+    }
+
     .articleInfo {
         background-color: lightgrey;
         border-radius: 15px;
