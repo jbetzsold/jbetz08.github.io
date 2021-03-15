@@ -25,9 +25,14 @@ fetch(apiURL)
 
         wc.textContent = calcWindChill(windSpeed, temperature);
         console.log(wc);
-        
-        
+    });
 
+const forecastAPI = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=impreial&appid=3acc9bdf01c7cbab075351d6e380495a"
+fetch(forecastAPI)
+    .then((response) => response.json())
+    .then((forecastObject) => {
+        console.log(forecastObject);
+        document.getElementById('')
 
     });
 
