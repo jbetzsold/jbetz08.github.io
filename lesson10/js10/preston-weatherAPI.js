@@ -4,7 +4,7 @@ fetch(apiURL)
     .then((jsObject) => {
         console.log(jsObject);
         document.getElementById('current').textContent = jsObject.weather[0].description;
-        document.getElementById('temp').textContent = jsObject.main.temp;
+        document.getElementById('temp').textContent = Math.round(jsObject.main.temp);
         document.getElementById('humidity').textContent = jsObject.main.humidity;
         document.getElementById('windspeed').textContent = jsObject.wind.speed;
         var windSpeed = jsObject.wind.speed;
@@ -15,7 +15,7 @@ fetch(apiURL)
             let windChill = 35.74 + (0.6215 * temperature) - (35.75 * (Math.pow(windSpeed, 0.16))) + (0.4275 * temperature) * Math.pow(windSpeed, 0.16);
 
             if (temperature <= 50 && windSpeed > 3) {
-                return windChill.toFixed(2);
+                return Math.round(windChill);
             }
 
             else {
