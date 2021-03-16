@@ -94,6 +94,25 @@
         text-align: center;
     }
 
+    .weatherSummary {
+        position: absolute;
+        top: 250px;
+        left: 25px;
+        max-width: 25%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #111;
+        color: white;
+        padding: 10px;
+        background-color: lightgray;
+        
+
+    }
+
+    .weatherSummary p {
+        margin: 2px;
+        font-size: 9pt;;
+    }
+
     .hero {
         display: block;
         margin: 0 auto;
