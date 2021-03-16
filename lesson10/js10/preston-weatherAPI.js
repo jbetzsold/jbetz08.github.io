@@ -27,12 +27,25 @@ fetch(apiURL)
         console.log(wc);
     });
 
-const forecastAPI = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=impreial&appid=3acc9bdf01c7cbab075351d6e380495a"
+const forecastAPI = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=3acc9bdf01c7cbab075351d6e380495a"
 fetch(forecastAPI)
     .then((response) => response.json())
     .then((forecastObject) => {
         console.log(forecastObject);
-        document.getElementById('')
+        
+        const forecast = forecastObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+        i = 0;
+        forecast.forEach(x => {
+            let imagesrc = 'https://openweathermap.org/img/w/' + x.weather[0].icon + '.png';
+            let description = x.weather[0].description;
+
+            document.getElementById(`temp${i + 1}`).textContent = Math.round(x.main.temp);
+            document.getElementById(`icon${i + 1}`).setAttribute('src', imagesrc);
+            document.getElementById(`icon${1 + 1}`).setAttribute('alt', description);
+
+            i++;
+
+        });
 
     });
 
