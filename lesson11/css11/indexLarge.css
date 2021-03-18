@@ -79,23 +79,6 @@
         text-align: center;
     }
 
-    .weatherSummary {
-        position: absolute;
-        top: 90px;
-        left: 50px;
-        max-width: 25%;
-        border-radius: 10px;
-        box-shadow: 0 0 10px #111;
-        color: white;
-        padding: 10px;
-        
-
-    }
-
-    .weatherSummary p {
-        margin: 2px;
-    }
-
    .cards {
        display:grid;
        grid-template-columns: 1fr 1fr 1fr;
