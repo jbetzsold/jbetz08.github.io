@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Southeast Idaho Weather - Home</title>
-    <link rel="stylesheet" href="css11/indexSmall.css">
-    <link rel="stylesheet" href="css11/indexMedium.css">
-    <link rel="stylesheet" href="css11/indexLarge.css">
+    <title>Image Gallery Southeast Idaho Weather</title>
+    <link rel="stylesheet" href="css11/gallerySmall.css">
+    <link rel="stylesheet" href="css11/galleryMedium.css">
+    <link rel="stylesheet" href="css11/galleryLarge.css">
     <link rel="stylesheet" href="css11/normalize.css">
     <!-- link for hamburger icon and social icons below -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -16,7 +16,7 @@
     <header id="yes">
         <img src="img11/weatherLogo.png" alt="logo">
         <section class="headings">
-            <h1>Southeast Idaho Weather</h1>
+            <h1>Southeast Idaho Weather</h1> 
             <div class="m">Here for you on a rainy day</div>
         </section>
     </header>
@@ -27,24 +27,94 @@
         </a>
         <!-- ul element tag below is a child of topnav  -->
         <ul id="myLinks">
-            <li><a class="wayfinder" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="preston-11.html">Preston</a></li>
             <li><a href="">Soda Springs</a></li>
             <li><a href="">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a class="wayfinder" href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Southeast Idaho Weather </h2>
-        <picture>
-                <source srcset="img11/wdd230_image_medium.jpeg" media="(min-width: 643px) and (max-width: 999px)">
-                    <source srcset="img11/wdd230_image_large.jpeg" media="(min-width: 1000px)">
-            <img src="img11/wdd230_image_small.jpeg" alt="small hero img">
-        </picture>
-        
-        <div class="cards"></div>
+        <h2>Weather Gallery</h2>
 
+        <section class="imageGallery">
+
+
+            <div class="topLeft">
+                <picture>
+                    <img src="img11/300x300placeholder.jpeg" data-src="img11/gallery1.jpg" alt="snowy trees">
+                </picture>
+                <h3>Frosted tree tops by Fish Haven river</h3>
+            </div>
+
+            <div class="topCenter">
+                <picture>
+                    <img src="img11/300x300placeholder.jpeg" data-src="img11/gallery2.jpg" alt="lakes at sunset">
+                </picture>
+                <h3>Lakes and lush green hills in Soda Springs</h3>
+            </div>
+            
+
+            <div class="topLeft">
+                <picture>
+                    <img src="img11/300x300placeholder.jpeg" data-src="img11/gallery3.jpg" alt="fog over evergreens">
+                </picture>
+                <h3>Fog over Soda Springs</h3>
+            </div>
+            
+
+            <div class="middleLeft">
+                <picture>
+                    <img src="img11/300x300placeholder.jpeg" data-src="img11/gallery4.jpg" alt="sunset city scape">
+                </picture>
+                <h3>Sunset behind Preston</h3>
+            </div>
+        
+
+            <div class="middleCenter">
+                <picture>
+                    <img src="img11/300x300placeholder.jpeg" data-src="img11/gallery5.jpg" alt="galaxy night sky">
+                </picture>
+                <h3>Night sky outskirts of Preston</h3>
+            </div>
+            
+
+            <div class="middleRight">
+                <picture>
+                    <img src="img11/300x300placeholder.jpeg" data-src="img11/gallery6.jpg" alt="beach sunset">
+                </picture>
+                <h3>Sunset on the beaches of Fish Haven</h3>
+            </div>
+            
+
+            <div class="bottomLeft">
+                <picture>
+                    <img src="img11/300x300placeholder.jpeg" data-src="img11/gallery7.jpg" alt="fog green grass">
+                </picture>
+                <h3>Foggy day in Preston</h3>
+            </div>
+            
+
+            <div class="bottomCenter">
+                <picture>
+                    <img src="img11/300x300placeholder.jpeg" data-src="img11/gallery8.jpg" alt="fall time mountain">
+                </picture>
+                <h3>A look at Soda Springs in the fall</h3>
+            </div>
+            
+
+            <div class="bottomRight">
+                <picture>
+                    <img src="img11/300x300placeholder.jpeg" data-src="img11/gallery9.jpg" alt="northern lights">
+                </picture>
+                <h3>Northern lights in Fish Haven</h3>
+            </div>
+            
+
+        </section>
+        
+        
         <div class="articleInfo">
             <img src="img11/preston-article-img.jpg" alt="campfire joy">
             <h4>Article Title</h4>
@@ -61,7 +131,6 @@
                 non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.
             </p>
         </div>
-
 
 
         <h3>Contact Us</h3>
@@ -97,7 +166,7 @@
             <span id="year"></span>.
         </p>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script src="js11/index.js"></script>
+        <script src="js11/gallery.js"></script>
     </footer>
     
 </body>

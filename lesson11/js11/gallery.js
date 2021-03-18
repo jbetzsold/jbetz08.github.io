@@ -1,3 +1,12 @@
+//regular page items
+WebFont.load({
+    google: {
+        families: [
+            'Oswald', 'Sans-serif'
+        ]
+    }
+});
+
 function myFunction() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
@@ -81,8 +90,7 @@ switch (month) {
     default:
         document.querySelector('#month').textContent = 'Something is messed up with month';
 }
-
-
+//banner code
 function addElement () {
 
     const newDiv = document.createElement("div");
@@ -97,62 +105,49 @@ function addElement () {
 
 }
 
+//lazy-loading image gallery
+const imagesToLoad = document.querySelectorAll('img[data-src]');
+console.log(imagesToLoad);
 
-WebFont.load({
-    google: {
-        families: [
-            'Oswald', 'Sans-serif'
-        ]
-    }
-});
+const loadImages = (image) => {
+  image.setAttribute('src', image.getAttribute('data-src'));
+  image.onload = () => {
+    image.removeAttribute('data-src');
+  };
+};
 
-//town JSON info
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const towns = jsonObject['towns'];
 
-    for (let i = 0; i < towns.length; i++ ) {
-        if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
+const imgOptions = {
+    threshold: 1,
+    rootMargin: "0px 0px 50px 0px"
+};
 
-            let card = document.createElement('section');
-            let info = document.createElement('div');
-            let townName = document.createElement('h2');
-            let townMotto = document.createElement('p');
-            let founded = document.createElement('h3');
-            let pop = document.createElement('h4');
-            let rainfall = document.createElement('h5');
-            let image = document.createElement('img');
 
-            card.className = towns[i].name;
-            townName.textContent = towns[i].name;
-            townMotto.textContent = towns[i].motto;
-            founded.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            pop.textContent = 'Population: ' + towns[i].currentPopulation;
-            rainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
-            image.setAttribute('src', 'img11/' + towns[i].photo);
-            image.setAttribute('alt', towns[i].name);
 
-            card.appendChild(info);
-            card.appendChild(image);
-            info.appendChild(townName);
-            info.appendChild(townMotto);
-            info.appendChild(founded);
-            info.appendChild(pop);
-            info.appendChild(rainfall);
+// MDN Web Docs
 
-            document.querySelector('div.cards').appendChild(card);
-
+if('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((items, observer) => {
+      items.forEach((item) => {
+        if(item.isIntersecting) {
+          loadImages(item.target);
+          observer.unobserve(item.target);
         }
-
-
-    }
-
+      });
+    }, imgOptions);
     
+    imagesToLoad.forEach((img) => {
+      observer.observe(img);
+    });
+  } else {
+    imagesToLoad.forEach((img) => {
+      loadImages(img);
+    });
+  }
 
-  });
+
+
+
+
+
