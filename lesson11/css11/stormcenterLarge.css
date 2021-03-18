@@ -1,0 +1,135 @@
+@media (min-width: 960px) {
+
+    body {
+        font-family: 'Oswald', sans-serif;
+        max-width: 960px;
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+
+    #banner {
+        background-color: gold;
+        padding: 5px;
+        text-align: center;
+
+    }
+    
+    header img {
+        width: 80px;
+        height: auto;
+    }
+    
+    .headings {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .headings h1 {
+        font-size: 1.6rem;
+        margin: 0 0 0 17px;
+    }
+    
+    .m {
+        font-style: italic;
+        letter-spacing: 1pt;
+        color: whitesmoke;
+        margin-left: 20px;
+        font-size: .9rem;
+    }
+    
+    #myLinks li {
+        list-style-type: none;
+
+    }
+
+    #myLinks a {
+        background-color: black;
+        font-size: 1.2rem;
+        align-content: center;
+    }
+
+    .topnav #myLinks {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+        margin: 0;
+        padding: 0px;
+    }
+
+    .topnav a {
+        padding: 10px;
+    }
+
+    
+    .topnav a.icon {
+        display: none;
+        
+    }
+    
+    .topnav a:hover {
+        background-color: #ddd;
+        color:forestgreen;
+    }
+
+    main {
+        position:relative;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .weatherSummary {
+        position: absolute;
+        top: 90px;
+        left: 50px;
+        max-width: 25%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #111;
+        color: white;
+        padding: 10px;
+        
+
+    }
+
+    .weatherSummary p {
+        margin: 2px;
+    }
+
+    .articleInfo img {
+        float: right;
+        max-width: 35%;
+        margin: 7px;
+    }
+
+    .contactUs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .lcolumn {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .lcolumn img {
+        max-width: 85%;
+    }
+
+    .rcolumn {
+        grid-column: 2/3;
+    }
+    
+    footer {
+        background-color: forestgreen;
+        color: white;
+        padding: 7px;
+    }
+    
+    footer p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+}
