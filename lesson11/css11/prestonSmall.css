@@ -101,7 +101,7 @@
         max-width: 25%;
         border-radius: 10px;
         box-shadow: 0 0 10px #111;
-        color: white;
+        color: black;
         padding: 10px;
         background-color: lightgray;
         
@@ -141,6 +141,17 @@
         padding: 1%;
         text-align: center;
         margin: auto;
+    }
+
+    .events {
+        background-color: lightgray;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .events h2 {
+        border-bottom: 2px solid goldenrod;
+        padding: 10px;
     }
 
     .articleInfo {
