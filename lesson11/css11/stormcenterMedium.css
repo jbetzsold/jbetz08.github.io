@@ -75,12 +75,6 @@
         font-size: 1.8rem;
         text-align: center;
     }
-
-    .articleInfo img {
-        float: right;
-        max-width: 50%;
-        margin: 7px;
-    }
     
     footer {
         background-color: forestgreen;

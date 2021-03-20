@@ -101,20 +101,6 @@
         max-height: 80%;
     }
 
-    .fiveDayForecast h3 {
-        font-size: 2.5rem;
-        text-align: center;
-        margin: 15px;
-    }
-
-    .fiveDayForecast {
-        background-color: lightgray;
-        border-radius: 15px;
-        padding: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
     table, th, td {
         border: 3px solid forestgreen;
         border-radius: 10px;
@@ -123,27 +109,6 @@
         text-align: center;
         margin: auto;
     }
-
-    .articleInfo {
-        background-color: lightgrey;
-        border-radius: 15px;
-        padding: 5px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-
-    }
-
-    .articleInfo h4 {
-        font-size: 2rem;
-    }
-
-    .articleInfo img {
-        display: block;
-        margin: 0 auto;
-        max-width: 75%;
-    }
-
-
 
     .fa {
         padding: 20px;
@@ -204,15 +169,16 @@
         display: block;
     }
 
+    /*
     form label.top input, form label.top select {
         display: block;
         border: solid 1px #999;
         padding: .75rem;
         width: 80%;
         background-color: #f8f8f8;
-    }
+    }*/
 
-    .indanger {
+    .indanger label {
         line-height: 30px;
     }
 

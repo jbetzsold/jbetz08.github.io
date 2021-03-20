@@ -41,22 +41,22 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Your Contact Information</legend>
-                <label id="top">Full Name<span class="req">(required)</span>
+                <label>Full Name<span class="req">(required)</span>
                     <br>
                     <input type="text" pattern="[a-z A-Z]{5,}" class="form-control" name="name" title="Must be 5 or more alphabet characters." required>
                 </label>
                 <br>
-                <label id="top">Email
+                <label>Email
                     <br>
                     <input type="email" name="email" placeholder="name@gmail.com">
                 </label>
                 <br>
-                <label id="top">Phone Number<span class="req">(required)</span>
+                <label>Phone Number<span class="req">(required)</span>
                     <br>
                     <input type="tel" name="tel" required>
                 </label>
                 <br>
-                <label id="top">Zip Code<span class="req">(required)</span>
+                <label>Zip Code<span class="req">(required)</span>
                     <br>
                     <input type="number" name="zip" required>
                 </label>
@@ -65,11 +65,11 @@
 
             <fieldset>
                 <legend>Storm Information</legend>
-                <label id="top">Storm Date<span class="req">(required)</span>
+                <label>Storm Date<span class="req">(required)</span>
                     <input type="date" name="date" required>
                 </label>
                 <br>
-                <label id="top" for="storm">Storm Type
+                <label for="storm">Storm Type
                     <input list="storms" name="storm" id="storm">
                 </label>
                 <datalist id="storms">
@@ -102,10 +102,10 @@
                 </div>
                 <br>
                 <div>
-                    <label id="top">Storm Region
+                    <label>Storm Region
                         <br>
                         <select name="region">
-                            <option value="select" select disabled>Select Region &#9662;</option>
+                            <option value="">-- Select Region &#9662;</option>
                             <option value="preston">Preston</option>
                             <option value="sodasprings">Soda Springs</option>
                             <option value="fishhaven">Fish Haven</option>
@@ -115,17 +115,17 @@
             </fieldset>
             <br>
 
-            <fieldset>
+            <fieldset class="indanger">
                 <legend>Are you in danger?</legend>
-                <label class="indanger">
+                <label>
                     <input type="radio" name="danger" value="no"> No
                 </label>
                 <br>
-                <label class="indanger">
+                <label>
                     <input type="radio" name="danger" value="maybe"> Maybe
                 </label>
                 <br>
-                <label class="indanger">
+                <label>
                     <input type="radio" name="danger" value="Yes"> Yes
                 </label>
                 <br>
