@@ -1,0 +1,35 @@
+@media (min-width: 600px) {
+    
+
+    .topnav #myLinks {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+        margin: 0;
+        padding: 0;
+    }
+
+    .topnav a {
+        padding: 10px;
+    }
+
+    .topnav a.icon {
+        display: none;
+    }
+
+    .weatherSummary {
+        position: absolute;
+        top: 345px;
+        left: 50px;
+        max-width: 25%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #111;
+        color: white;
+        padding: 10px;
+        background-color: #e07a5f;
+        font-size: .9rem;
+    }
+
+    table {
+        max-width: 599px;
+    }
+}

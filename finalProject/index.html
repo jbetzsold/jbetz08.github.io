@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vineyard UT Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- link for hamburger icon and social icons below -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="shortcut icon" href="images/favicon.ico">       
+</head>
+<body>
+    <header>
+        <img src="images/vineyardLogo.png" alt="logo">
+        <section class="headings">
+            <h1>Vineyard Chamber of Commerce</h1>
+            <div class="m">Live Happy, Get Involved</div>
+        </section>
+    </header>
+    <nav class="topnav">
+        <!-- anchor element below is a child of topnav  -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <!-- ul element tag below is a child of topnav  -->
+        <ul id="myLinks">
+            <li><a class="wayfinder" href="index.html">Home</a></li>
+            <li><a href="vineyard.html">Vineyard</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Vineyard Utah</h2>
+        <picture>
+                <source srcset="images/mountainHeroMed.jpg" media="(min-width: 600px) and (max-width: 799px)">
+                    <source srcset="images/mountainHeroLarge.jpg" media="(min-width: 800px)">
+            <img src="images/mountainHeroSmall.jpg" alt="small hero img">
+        </picture>
+        
+        <div class="weatherSummary">
+            <h3>Current Weather</h3>
+            <p>Current Temperature: <span id="temp"></span>&#176;F</p>
+            <p>Outside: <span id="condition"></span></p>
+            <p>Humidity: <span id="humid"></span>%</p>
+        </div>
+        
+
+        <div class="threeDayForecast">
+            <h3>Three Day Forecast</h3>
+            <table style="width: 100%">
+                <tr>
+                    <th><span id="day1"></span></th>
+                    <th><span id="day2"></span></th>
+                    <th><span id="day3"></span></th>
+                </tr>
+                <tr>
+                    <td><span id="imagesrc1"></span><img id="icon1"></td>
+                    <td><span id="imagesrc2"></span><img id="icon2"></td>
+                    <td><span id="imagesrc3"></span><img id="icon3"></td>
+                </tr>
+                <tr>
+                    <td><span id="temp1"></span>&#176;F</td>
+                    <td><span id="temp2"></span>&#176;F</td>
+                    <td><span id="temp3"></span>&#176;F</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="aboutUs">
+            <h3>Our Goals</h3>
+            <p>
+                As an organization, we intend on fostering a solid, trusting relationship with all members of the Chamber
+                of Commerce. We work together as local businesses to harvest good relationships in hopes of strengthening
+                every members business. Attending Chamber of Commerce meetings is a practical way to generate leads and 
+                sign life-long clients. There are also many ways to get involved locally to spread business 
+                interests, and trust within the community.
+            </p>
+        </div>
+
+        
+        <div class="indexImages">
+            <picture>
+                <img src="images/300x300placeholder.jpeg" data-src="images/localGovernment.jpg" alt="government building">
+            </picture>
+            <picture>
+                <img src="images/300x300placeholder.jpeg" data-src="images/classroomVineyard.jpg" alt="classroom desks">
+            </picture>
+            <picture>
+                <img src="images/300x300placeholder.jpeg" data-src="images/growingVineyard.jpeg" alt="construction vineyard">
+            </picture>
+        </div>
+
+
+        <div class="callToAction">
+            <h3>Become a member!</h3>
+            <p>Get involved in the community. Make a difference.</p>
+            <p>Click <a href="join.html">here</a> to join the Vineyard Chamber of Commerce!</p>
+        </div>
+
+        
+        
+        <div class="contactUs">
+            <h3>Contact Us</h3>
+            <div class="lcolumn">
+                <p>
+                    125 S Main St. Vineyard, UT 84059
+                    <br>
+                    <br>
+                    info@vineyardtown.com 
+                    <br>
+                    <br>
+                    801-226-1929
+                    <br>
+                    <br>
+                </p>
+            </div>
+            <div class="rcolumn">
+                <p>Follow us on social platforms:</p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <br>
+            </div>
+                
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; Vineyard Chamber of Commerce | Attributions | Josh Betzsold </p>
+        <p>
+            <span id="dayofweek"></span>,
+            <span id="daynumber"></span>
+            <span id="month"></span>
+            <span id="year"></span>.
+        </p>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/scripts.js"></script>
+    </footer>
+    
+</body>
+</html>

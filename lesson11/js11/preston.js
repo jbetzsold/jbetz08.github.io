@@ -175,7 +175,7 @@ fetch(forecastAPI)
         const newDiv = document.createElement("div");
         newDiv.setAttribute("id", "banner");
     
-        const newContent = document.createTextNode("Saturday = Preston Pancakes in the Park! 9:00 a.m.\n Saturday at the city park pavilion.");
+        const newContent = document.createTextNode("Become a member of the Vineyard Chamber today!");
         newDiv.appendChild(newContent);
     
         const currentDiv = document.getElementById("yes");
