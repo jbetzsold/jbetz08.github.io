@@ -1,5 +1,7 @@
 @media (min-width: 600px) {
-    
+    body {
+        margin: 0 auto;
+    }
 
     .topnav #myLinks {
         display: grid;
@@ -31,5 +33,9 @@
 
     table {
         max-width: 599px;
+    }
+
+    .callToAction {
+        margin: 0 auto;
     }
 }
