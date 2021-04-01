@@ -119,6 +119,47 @@ table, th, td {
     text-decoration-style: double;
 }
 
+picture img[data-src] {
+    filter: blur(0.2rem);
+}
+
+picture img {
+    filter: blur(0rem);
+    transition: filter 0.5s;
+}
+
+.indexImages div {
+    max-width: 285px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #bfbfbf;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.indexImages div h3 {
+    text-align: center;
+    font-style: italic;
+}
+
+.localCompanies {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.localCompanies h3 {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
 .callToAction {
     background-color: #81b29a;
     color: white;
@@ -135,6 +176,15 @@ table, th, td {
 
 .callToAction a:hover {
     color: lightgray;
+}
+
+.upcomingEvents {
+    padding: 15px;
+}
+
+.upcomingEvents h3 {
+    text-decoration-line: underline;
+    text-decoration-style: double;
 }
 
 .fa {

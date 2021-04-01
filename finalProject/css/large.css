@@ -24,5 +24,26 @@
         font-size: .9rem;
     }
 
+    .indexImages {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .indexImages div:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+    .localCompanies {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        max-width: none;
+    }
+
+    .localCompanies h3 {
+        grid-column: 1/4;
+    }
+
     
 }
