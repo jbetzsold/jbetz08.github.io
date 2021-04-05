@@ -215,6 +215,25 @@ picture img {
     text-decoration-style: double;
 }
 
+#eventLeft {
+    margin: 0 auto;
+}
+
+#eventLeft img {
+    border: 1px solid black;
+}
+
+#eventRight h3 {
+    text-align: center;
+    color: black;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+#eventRight h4 {
+    color: #e07a5f;
+}
+
 .lcolumn {
     grid-column: 1/2;
     text-align: center;

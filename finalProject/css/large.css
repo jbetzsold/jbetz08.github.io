@@ -45,5 +45,23 @@
         grid-column: 1/4;
     }
 
+    .cityEvents {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+        padding: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #eventRight {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #eventRight h3 {
+        grid-column: 1/3;
+    }
+
     
 }
