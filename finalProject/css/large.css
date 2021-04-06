@@ -54,7 +54,12 @@
         margin-bottom: 20px;
     }
 
+    #eventLeft {
+        grid-column: 1/2;
+    }
+
     #eventRight {
+        grid-column: 2/3;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }

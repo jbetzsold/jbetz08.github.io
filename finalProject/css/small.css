@@ -73,6 +73,15 @@ main h2 {
     padding: 20px;
 }
 
+#special {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: black;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
 picture img {
     max-width: 95%;
     display: block;
@@ -232,6 +241,38 @@ picture img {
 
 #eventRight h4 {
     color: #e07a5f;
+}
+
+form {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+
+form input.submitBtn {
+    border: none;
+    background-color: #81b29a;
+    color: white;
+    border-radius: 5px;
+    padding: .45rem;
+    margin-top: 15px;
+}
+
+form legend {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    padding: 5px;
+    color: #e07a5f;
+}
+
+form fieldset {
+    border: 3px double #e07a5f;
+    padding: 15px;
+}
+
+label input {
+    margin: 0 15px 15px 15px;
 }
 
 .lcolumn {
