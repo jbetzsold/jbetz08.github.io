@@ -96,3 +96,13 @@ WebFont.load({
         ]
     }
 });
+
+
+//json data pull
+const fetchAPI = "https://jbetz08"
+
+fetch("./json/directory.json")
+.then((response) => response.json())
+.then((jsObject) => {
+    console.log(jsObject);
+});
