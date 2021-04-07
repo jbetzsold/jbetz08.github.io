@@ -38,4 +38,14 @@
     .callToAction {
         margin: 0 auto;
     }
+
+    #contactInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #cityCounsel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

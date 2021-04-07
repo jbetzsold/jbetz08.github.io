@@ -199,6 +199,21 @@ picture img {
 #contactInfo {
     padding: 15px;
     margin-top: 10px;
+    text-align: center;
+}
+
+#comment {
+    height: 125px;
+}
+
+#cityCounsel h3 {
+    color: black;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+#cityCounsel div img {
+    border: 1px solid black;
 }
 
 .fa {
