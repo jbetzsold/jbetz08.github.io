@@ -68,5 +68,10 @@
         grid-column: 1/3;
     }
 
+    #contactInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     
 }
