@@ -9,6 +9,26 @@ function myFunction() {
     }
 }
 
+function gridView() {
+    var x = document.querySelector("cards");
+    if (x.style.display === "grid") {
+        x.style.display = "none";
+    }
+    else {
+        x.style.display = "grid";
+    }
+}
+
+function listView() {
+    var x = document.querySelector("cards");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    }
+    else {
+        x.style.display = "block";
+    }
+}
+
 // js dates
 const now = new Date();
 const today = now.getDay();
@@ -99,10 +119,36 @@ WebFont.load({
 
 
 //json data pull
-const fetchAPI = "https://jbetz08"
+const fetchAPI = "https://jbetz08.github.io/finalProject/json/directory.json"
 
-fetch("./json/directory.json")
+fetch(fetchAPI)
 .then((response) => response.json())
 .then((jsObject) => {
     console.log(jsObject);
+    const business = jsObject['Businesses'];
+
+    for (let i = 0; i < business.length; i++) {
+        let card = document.createElement('div');
+        let image = document.createElement('img');
+        let name = document.createElement('h3');
+        let phone = document.createElement('h4');
+        let address = document.createElement('p');
+        let website = document.createElement('p');
+
+        image.setAttribute('src', business[i].logo);
+        image.setAttribute('alt', business[i].name + ' logo');
+        name.textContent = business[i].name;
+        phone.textContent = business[i].phone;
+        address.textContent = business[i].address;
+        website.textContent = business[i].website;
+
+        card.appendChild(image);
+        card.appendChild(name);
+        card.appendChild(phone);
+        card.appendChild(address);
+        card.appendChild(website);
+
+        document.querySelector('div.cards').appendChild(card);
+
+    }
 });

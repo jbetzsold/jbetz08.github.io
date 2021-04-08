@@ -48,4 +48,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .top {
+        display: flex;
+        align-items: center;
+    }
+
+    .fa-list, .fa-th {
+        float: right;
+    }
 }

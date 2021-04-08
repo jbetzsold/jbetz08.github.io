@@ -73,6 +73,10 @@ main h2 {
     padding: 20px;
 }
 
+.top a {
+    display: none;
+}
+
 #special {
     text-align: center;
     margin: 0;
@@ -225,7 +229,7 @@ picture img {
     margin: 5px 2px;
 }
 
-.fa-instagram, .fa-facebook, .fa-youtube {
+.fa-instagram, .fa-facebook, .fa-youtube, .fa-list, .fa-th {
     background: #3d405b;
     color: white;
 }
@@ -293,6 +297,23 @@ form fieldset {
 
 label input {
     margin: 0 15px 15px 15px;
+}
+
+.cards {
+    padding: 10px 0 10px 0;
+}
+
+.cards div {
+    overflow: hidden;
+    max-width: 275px;
+    margin: 5px auto;
+    padding: 5px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.cards div img {
+    max-width: 275px;
 }
 
 .lcolumn {
