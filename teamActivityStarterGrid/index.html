@@ -12,7 +12,7 @@
 
 <body>
   <main>
-    <section id="card1" class="smaller">
+    <section onload="showDiv1()" id="card1" class="smaller">
       <img src="images/personal.png" alt="Personal" />
       <h2>Personal</h2>
       <ul>
@@ -23,9 +23,9 @@
       <div class="pricing">
         <em>$</em><span>3</span><em>99</em><br />per month
       </div>
-      <a href="#">SignUp</a>
+      <a href="#" onclick="showAlert()">SignUp</a>
     </section>
-    <section id="card2">
+    <section onload="showDiv2()"id="card2">
       <div class="popular">Most Popular</div>
       <img src="images/business.png" alt="Business" />
       <h2>Business</h2>
@@ -37,9 +37,9 @@
       <div id="bpricing" class="pricing">
         <em>$</em><span>5</span><em>99</em><br />per month
       </div>
-      <a href="#">SignUp</a>
+      <a href="#" onclick="showAlert()">SignUp</a>
     </section>
-    <section id="card3" class="smaller">
+    <section onload="showDiv3()"id="card3" class="smaller">
       <img src="images/enterprise.png" alt="Enterprise" />
       <h2>Enterprise</h2>
       <ul>
@@ -49,7 +49,7 @@
         <li class="pricing">
           <em>$</em><span>9</span><em>99</em><br />per month
         </li>
-        <a href="#">SignUp</a>
+        <a href="#" onclick="showAlert()">SignUp</a>
       </ul>
     </section>
   </main>

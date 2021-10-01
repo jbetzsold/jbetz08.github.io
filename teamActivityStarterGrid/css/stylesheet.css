@@ -138,6 +138,10 @@ em {
 
 }
 
+#card1, #card2, #card3 {
+  visibility: hidden;
+}
+
 @media only screen and (max-width: 799px) {
   #pricing-main main {
     display: block;
