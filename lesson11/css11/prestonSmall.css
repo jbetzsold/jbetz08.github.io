@@ -12,8 +12,8 @@
     }
 
     header {
-        background-color: forestgreen;
-        padding: 15px 0;
+        background-color: #FCBFB7;
+        padding: 35px 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -37,19 +37,19 @@
     .m {
         font-style: italic;
         letter-spacing: 1pt;
-        color: whitesmoke;
+        color: #334E58;
         margin-left: 20px;
         font-size: .9rem;
     }
 
     .wayfinder {
-        border: 1px solid goldenrod;
+        border: 1px solid whitesmoke;
         font-style: italic;
     }
 
     .topnav {
         overflow: hidden;
-        background-color: #333;
+        /*background-color: #333;*/
         position: relative;
     }
 
@@ -62,7 +62,7 @@
     }
 
     .topnav a {
-        color: white;
+        color: whitesmoke;
         padding: 10px 7px;
         text-decoration: none;
         font-size: 1.1rem;
@@ -70,7 +70,7 @@
     }
 
     .topnav a.icon {
-        background-color: black;
+        background-color: #6B6D76;
         display: block;
         position: relative;
         
@@ -78,7 +78,7 @@
 
     .topnav a:hover {
         background-color: black;
-        color:forestgreen;
+        color: #334E58;
     }
 
     main {
@@ -128,7 +128,7 @@
     }
 
     .fiveDayForecast {
-        background-color: lightgray;
+        background-color: #A69888;
         border-radius: 15px;
         padding: 10px;
         margin-top: 100px;
@@ -136,7 +136,7 @@
     }
 
     table, th, td {
-        border: 3px solid forestgreen;
+        border: 3px solid #FCBFB7;
         border-radius: 10px;
         border-collapse: collapse;
         padding: 1%;
@@ -145,18 +145,18 @@
     }
 
     .events {
-        background-color: lightgray;
+        background-color: #A69888;
         border-radius: 15px;
         padding: 10px;
     }
 
     .events h2 {
-        border-bottom: 2px solid goldenrod;
+        border-bottom: 2px solid #FCBFB7;
         padding: 10px;
     }
 
     .articleInfo {
-        background-color: lightgrey;
+        background-color: #A69888;
         border-radius: 15px;
         padding: 5px;
         margin-top: 10px;
@@ -186,17 +186,17 @@
     }
 
     .fa-instagram {
-        background: #125688;
+        background: #334E58;
         color: white;
     }
 
     .fa-facebook {
-        background: #125688;
+        background: #334E58;
         color: white;
     }
 
     .fa-youtube {
-        background: #125688;
+        background: #334E58;
         color: white;
     }
 
@@ -205,7 +205,7 @@
     }
 
     footer {
-        background-color: forestgreen;
+        background-color: #334E58;
         color: white;
         padding: 2px;
     }

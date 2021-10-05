@@ -4,13 +4,6 @@
         font-family: 'Oswald', sans-serif;
     }
     
-    header {
-        background-color: lightgreen;
-        padding: 5px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     
     header img {
         width: 80px;
@@ -27,13 +20,6 @@
         margin: 0 0 0 17px;
     }
     
-    .m {
-        font-style: italic;
-        letter-spacing: 1pt;
-        color: forestgreen;
-        margin-left: 20px;
-        font-size: .9rem;
-    }
     
     #myLinks li {
         list-style-type: none;
@@ -41,7 +27,7 @@
     }
 
     #myLinks a {
-        background-color: black;
+        background-color: #A69888;
         font-size: 1rem;
         align-content: center;
     }
@@ -73,8 +59,6 @@
     }
     
     footer {
-        background-color: forestgreen;
-        color: white;
         padding: 5px;
     }
     
