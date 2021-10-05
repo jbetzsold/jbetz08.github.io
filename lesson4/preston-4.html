@@ -13,28 +13,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">        
 </head>
 <body>
-    <header>
-        <img src="images/weatherLogo.png" alt="logo">
-        <section class="headings">
-            <h1>Southeast Idaho Weather</h1>
-            <div class="m">Website Motto: Here for you on a rainy day</div>
-        </section>
-    </header>
-    <nav class="topnav">
-        <!-- anchor element below is a child of topnav  -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <!-- ul element tag below is a child of topnav  -->
-        <ul id="myLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="preston-4.html">Preston</a></li>
-            <li><a href="">Soda Springs</a></li>
-            <li><a href="">Fish Haven</a></li>
-            <li><a href="">Storm Center</a></li>
-            <li><a href="">Gallery</a></li>
-        </ul>
-    </nav>
+    <header class="header">
+
+        <div class="wrap">
+      
+          <h2 class="logo"><a href="#">Website Logo</a></h2>
+      
+          <a id="menu-icon">&#9776; Menu</a>
+      
+          <nav class="navbar">
+            <ul class="menu">
+              <li><a class="active" href="#">Home</a></li><!--
+            --><li><a href="#">About</a></li><!--
+            --><li><a href="#">Blog</a></li><!--
+            --><li><a href="#">Work</a></li><!--
+            --><li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+      
+        </div>
+      </header>
     <main>
         <h2>Preston Idaho</h2>
         <img src="images/preston-social.png" alt="hero image">
