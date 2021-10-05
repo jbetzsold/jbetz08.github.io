@@ -50,7 +50,15 @@ fetch(forecastAPI)
     });
 
 
-    function myFunction() {
+
+    (document).ready(function(){
+        ('#menu-icon').on('click', function(){
+          ('.topnav').toggleClass('expand');
+          return false;
+        });
+      });
+
+    /*function myFunction() {
         var x = document.getElementById("myLinks");
         if (x.style.display === "block") {
             x.style.display = "none";
@@ -58,7 +66,7 @@ fetch(forecastAPI)
         else {
             x.style.display = "block";
         }
-    }
+    }*/
     
     const now = new Date();
     const today = now.getDay();

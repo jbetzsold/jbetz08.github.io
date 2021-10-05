@@ -24,7 +24,10 @@
         margin: 0 0 0 17px;
     }
     
-    
+    #menu-icon {
+        display: none;
+    }
+
     #myLinks li {
         list-style-type: none;
 
@@ -36,7 +39,12 @@
         align-content: center;
     }
 
-    .topnav #myLinks {
+    .topnav {
+        display: inline;
+        overflow: none;
+    }
+
+    /*.topnav #myLinks {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
         margin: 0;
@@ -51,7 +59,7 @@
     .topnav a.icon {
         display: none;
         
-    }
+    }*/
 
 
     main {
