@@ -8,13 +8,6 @@ function myFunction() {
     }
 }
 
-$(document).ready(function(){
-    $('#menu-icon').on('click', function(){
-      $('.navbar').toggleClass('expand');
-      return false;
-    });
-  });d
-
 const now = new Date();
 const today = now.getDay();
 document.querySelector('#daynumber').textContent = now.getDate();
