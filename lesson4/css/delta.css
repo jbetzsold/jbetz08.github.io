@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    max-width: 410px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #111;
+    color: black;
+    margin: 0 auto;
+}
+
+.top {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: .7rem;
+    border-radius: 10px;
+}
+
+#one {
+    grid-column: 1/2;
+    text-align: center;
+} 
+
+#two {
+    grid-column: 3/4;
+}
+
+.top div p {
+    color: #001b36;
+    font-size: .5rem;
+    text-align: center;
+    opacity: .8;
+}
+
+.top h4 {
+    text-align: right;
+    color: #001b36;
+    padding: 5px;
+    font-size: .8rem;
+    opacity: .6;
+}
+
+.destination {
+    background-color: #001b36;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.destination div {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.destination div p, .destination div h1 {
+    text-align: center;
+}
+
+.myImg {
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.myImg img {
+    vertical-align: middle;
+}
+
+.destination h1 {
+    color: white;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.destination p {
+    color: lightgray;
+    opacity: .30;
+    font-size: .6rem;
+}
+
+
+.flight-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: lightgrey;
+    padding: 15px;
+}
+
+.flight-info div {
+    padding: 10px;
+}
+
+.flight-info div p, .flight-info div h2 {
+    text-align: center;
+    color: #001b36;
+}
+
+.flight-info div h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.flight-info p {
+    font-size: .6rem;
+    font-weight: bolder;
+}
+
+.ident {
+    padding: 30px;
+    text-align: center;
+}
+
+.ident img {
+    margin: 0 auto;
+}
+
+.ident p {
+    color: #001b36;
+    font-size: .6rem;
+    opacity: .8;
+}
