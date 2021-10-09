@@ -1,70 +1,30 @@
 @media (min-width: 593px) {
 
-    body {
-        font-family: 'Oswald', sans-serif;
-    }
-    
-    
-    header img {
-        width: 80px;
-        height: auto;
-    }
-    
-    .headings {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .headings h1 {
-        font-size: 1.6rem;
-        margin: 0 0 0 17px;
-    }
-    
-    
-    #myLinks li {
-        list-style-type: none;
+    /* We want the navbar, main-nav and <ul> to have flex */
+  .navbar,
+  .main-nav,
+  .main-nav ul {
+    display: flex;
+  }
+  .main-nav a {
+    color: #3E000C;
+  }
 
-    }
+  .main-nav {
+    width: 100%;
+    max-height: none;
+    background-color: #f4f4f4;
 
-    #myLinks a {
-        background-color: #A69888;
-        font-size: 1rem;
-        align-content: center;
-    }
+  /* This puts the two <ul> to either side of their container */
+    justify-content: space-between;
+  }
 
-    .topnav #myLinks {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
-        margin: 0;
-    }
+  .logo {
+      font-size: 1rem;
+  }
 
-    .topnav a {
-        padding: 10px;
-    }
-
-    
-    .topnav a.icon {
-        display: none;
-        
-    }
-    
-    .topnav a:hover {
-        background-color: #ddd;
-        color:black;
-    }
-    
-    h2 {
-        font-size: 1.8rem;
-        text-align: center;
-    }
-    
-    footer {
-        padding: 5px;
-    }
-    
-    footer p {
-        font-size: 1rem;
-        text-align: center;
-    }
-
+  /* Hide the menu icon on tablet and desktop */
+  #menu-icon {
+    display: none;
+  }
 }
