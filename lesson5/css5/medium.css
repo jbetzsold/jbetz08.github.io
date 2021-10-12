@@ -83,7 +83,6 @@
     }
     
     footer {
-        background-color: forestgreen;
         color: white;
         padding: 5px;
     }
@@ -92,5 +91,33 @@
         font-size: 1rem;
         text-align: center;
     }
+
+     /* We want the navbar, main-nav and <ul> to have flex */
+  .navbar,
+  .main-nav,
+  .main-nav ul {
+    display: flex;
+  }
+  .main-nav a {
+    color: #3E000C;
+  }
+
+  .main-nav {
+    width: 100%;
+    max-height: none;
+    background-color: #f4f4f4;
+
+  /* This puts the two <ul> to either side of their container */
+    justify-content: space-between;
+  }
+
+  .logo {
+      font-size: 1rem;
+  }
+
+  /* Hide the menu icon on tablet and desktop */
+  #menu-icon {
+    display: none;
+  }
 
 }

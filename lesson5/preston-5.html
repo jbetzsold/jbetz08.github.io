@@ -9,90 +9,121 @@
     <link rel="stylesheet" href="css5/large.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="img5/faviconweather.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        
 </head>
 <body>
     <header id="yes">
-        <img src="img5/weatherLogo.png" alt="logo">
-        <section class="headings">
-            <h1>Southeast Idaho Weather</h1>
-            <div class="m">Website Motto: Here for you on a rainy day</div>
-        </section>
-    </header>
-    <nav class="topnav">
-        <!-- anchor element below is a child of topnav  -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <!-- ul element tag below is a child of topnav  -->
-        <ul id="myLinks">
-            <li><a href="">Home</a></li>
-            <li><a class="wayfinder" href="preston-5.html">Preston</a></li>
-            <li><a href="">Soda Springs</a></li>
-            <li><a href="">Fish Haven</a></li>
-            <li><a href="">Storm Center</a></li>
-            <li><a href="">Gallery</a></li>
-        </ul>
-    </nav>
-    <main>
+      <div class="navbar relative" >
+         <div class="logo">
+            <img src="img5/cloud-lightning.png" alt="logo">
+            <h3>Southeast Idaho Weather</h3>
+            <h6>Here for you on a rainy day</h6>
+            <a id="menu-icon">&#9776;Menu</a>
+         </div>
+         <nav class="main-nav ">
+            <ul>
+               <li>
+                  <a href="#">Home</a>
+               </li>
+               <li>
+                  <a href="#">Preston</a>
+               </li>
+               <li>
+                  <a href="#">Soda Springs</a>
+               </li>
+               <li>
+                <a href="#">Fish Haven</a>
+             </li>
+             <li>
+              <a href="#">Storm Center</a>
+           </li>
+           <li>
+            <a href="#">Gallery</a>
+         </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <br>
+   <br>
+      <main>
+  
         <h2>Preston Idaho</h2>
-        <img class="hero" src="img5/preston-hero-image.jpg" alt="hero image">
-
+        <picture>
+                <source srcset="img5/preston-hero-image-medium.jpg" media="(min-width: 643px) and (max-width: 999px)">
+                    <source srcset="img5/preston-hero-image-large.jpg" media="(min-width: 1000px)">
+            <img src="img5/preston-hero-image-small.jpg" alt="small hero img">
+        </picture>
+  
         <div class="weatherSummary">
             <h3>Weather Summary</h3>
-            <p>Currently: Cloudy</p>
-            <p>Temperature: 53F</p>
-            <p>Humidity: 23%</p>
-            <p>Precipitation: 11%</p>
-            <p>Wind Speed: 2 MPH</p>
+            <p>Currently: <span id="current"></span></p>
+            <p>Temperature: <span id="temp"></span> F</p>
+            <p>Wind Chill: <span id="windchill"></span> F</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="windspeed"></span>MPH</p>
         </div>
         
         <div class="fiveDayForecast">
             <h3>Five Day Forecast</h3>
             <table style="width:100%">
                 <tr>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
+                    <th><span id="day1"></span></th>
+                    <th><span id="day2"></span></th>
+                    <th><span id="day3"></span></th>
+                    <th><span id="day4"></span></th>
+                    <th><span id="day5"></span></th>
                 </tr>
                 <tr>
-                    <td><img src="img5/5daysummarycloud.png" alt="cloudy"></td>
-                    <td><img src="img5/5daysummarycloud.png" alt="cloudy"></td>
-                    <td><img src="img5/5daysummarycloud.png" alt="cloudy"></td>
-                    <td><img src="img5/5daysummarycloud.png" alt="cloudy"></td>
-                    <td><img src="img5/5daysummarycloud.png" alt="cloudy"></td>
+                    <td><span id="imagesrc1"></span> <img id="icon1"></td>
+                    <td><span id="imagesrc2"></span> <img id="icon2"></td>
+                    <td><span id="imagesrc3"></span> <img id="icon3"></td>
+                    <td><span id="imagesrc4"></span> <img id="icon4"></td>
+                    <td><span id="imagesrc5"></span> <img id="icon5"></td>
                 </tr>
                 <tr>
-                    <td>High: 55F <br> Low: 34F</td>
-                    <td>High: 56F <br> Low: 37F</td>
-                    <td>High: 53F <br> Low: 35F</td>
-                    <td>High: 51F <br> Low: 29F</td>
-                    <td>High: 59F <br> Low: 39F</td>
+                    <td><span id="temp1"></span> F
+                    <td><span id="temp2"></span> F
+                    <td><span id="temp3"></span> F
+                    <td><span id="temp4"></span> F
+                    <td><span id="temp5"></span> F
                 </tr>
             </table>
-
+  
         </div>
+  
+  
+        <section class="events">
+            <h2>Upcoming Events:</h2>
+  
+        </section>
+  
         
         <div class="articleInfo">
-            <img src="img5/preston-article-img.jpg" alt="campfire joy">
-            <h4>Article Title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
-                pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
-                Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
-                in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent
-                per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut 
-                vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar vitae dolor.
-                Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer feugiat 
-                faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc. 
-                Phasellus bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis. 
-                Cras pharetra mi tristique sapien vestibulum lobortis. Nam eget bibendum metus, 
-                non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.
+            <img src="img5/preston-article-img.webp" alt="campfire joy">
+            <h4>Preston Idaho | Wikipedia</h4>
+            <p>
+                For several years the city held a "Napoleon Dynamite Festival" in the summer. 
+                Many of the featured festival themes related to events occurring during the film. 
+                For example: Tetherball Tournament, Tater Tot Eating Contest, Moon Boot Dance, 
+                Impersonation, Look-A-Like Contest, Football Throwing Contest and more. In 2004 
+                there was a single day event that drew approximately 300 people. Although this was 
+                not a large crowd, it did help raise $1,500 for the Preston School District Education 
+                Foundation. In 2005 an estimated 6,000 people attended the event, but that number 
+                dropped to an estimated 400 people in 2006. The 2007 and 2008 event was held along with 
+                the 'That Famous Preston Night Rodeo' in Preston. There are no plans for reviving the 
+                event. 'That Famous Preston Night Rodeo' is usually held in late July, along with 
+                the Franklin County parade. The rodeo's name ('That Famous Preston Night Rodeo') comes 
+                from it being the first rodeo held during night time. It includes many events such as 
+                bull riding, barrel racing, and other popular events. The Franklin county parade includes 
+                floats and advertisements of local businesses. The rodeo and parade remain one of the 
+                town's most popular local events and traditions.
             </p>
         </div>
-
+  
         <h3>Contact Us</h3>
         <div class="contactUs">
             <div class="rcolumn">
@@ -106,27 +137,29 @@
                     <br>
                     Follow us on social platforms:
                 </p>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-youtube"></a>
+                <a href="https://www.facebook.com/josh.betzsold" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/jbetz08/" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/c/TimcastIRL" class="fa fa-youtube"></a>
                 <br>
             </div>
             <div class="lcolumn">
-                <img src="img5/mapPlaceholder.png" alt="map placeholder">
+                <img src="img5/prestonMap.webp" alt="map placeholder">
             </div>
         </div>
-
-    </main>
-    <footer>
-        <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>
-        <p>
-            <span id="dayofweek"></span>,
-            <span id="daynumber"></span>
-            <span id="month"></span>
-            <span id="year"></span>.
-        </p>
-        
-        <script src="js5/scripts.js"></script>
-    </footer>
-</body>
+  
+      </main>
+      <br>
+      <br>
+      <footer>
+          <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>
+          <p>
+              <span id="dayofweek"></span>,
+              <span id="daynumber"></span>
+              <span id="month"></span>
+              <span id="year"></span>.
+          </p>
+          
+          <script src="js5/scripts.js"></script>
+      </footer>
+  </body>
 </html>

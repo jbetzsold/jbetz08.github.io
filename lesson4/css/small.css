@@ -29,6 +29,14 @@ body {
 	-webkit-transition: max-height 0.5s;
 	transition: max-height 0.5s;
   }
+
+  .logo {
+	display: block;
+	color: whitesmoke;
+	font-size: 1.45em;
+	padding: 1rem;
+	background-color: #A69888;
+  }
   
   .logo, .main-nav a {
 	padding: 10px 15px;
@@ -36,11 +44,19 @@ body {
 	text-align: center;
   }
 
-  .motto {
-	  font-size: .8rem;
+  .logo em {
+	  font-size: .7rem;
+  }
+
+  .logo h3 {
+	  margin: 0 auto;
+  }
+
+  .logo h6 {
+	  margin: 0 auto;
 	  font-style: italic;
   }
-  
+
   .main-nav a {
 	color: #fdfeff;
 	font-size: 1.1em;
@@ -73,11 +89,7 @@ body {
   #menu-icon:hover {
    background-color: rgba(24, 26, 26, 0.055);
   }
-  .logo {
-	font-size: 1.45em;
-	padding: 1rem;
-	background-color: #FCBFB7;
-  }
+ 
   
   /* Expanded is the toggled class. IT allows the navbar to show the contents of the hamburger menu when pushed */
   .expanded {
@@ -220,7 +232,8 @@ table, th, td {
 }
 
   footer {
-	  background-color: #FCBFB7;
+	  color: whitesmoke;
+	  background-color: #A69888;
 	  text-align: center;
 	  padding: 1rem;
   }

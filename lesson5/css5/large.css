@@ -122,7 +122,6 @@
     }
     
     footer {
-        background-color: forestgreen;
         color: white;
         padding: 7px;
     }
@@ -131,5 +130,10 @@
         font-size: 1.3rem;
         text-align: center;
     }
+
+    .navbar {
+        flex-direction: row;
+        /* justify-content: space-between; */
+      }
 
 }
