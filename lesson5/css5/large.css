@@ -87,7 +87,6 @@
         max-width: 25%;
         border-radius: 10px;
         box-shadow: 0 0 10px #111;
-        color: white;
         padding: 10px;
         
 
@@ -135,5 +134,10 @@
         flex-direction: row;
         /* justify-content: space-between; */
       }
+
+      /* Hide the menu icon on tablet and desktop */
+    #menu-icon {
+        display: none;
+    }
 
 }

@@ -33,39 +33,6 @@
         margin-left: 20px;
         font-size: .9rem;
     }
-    
-    #myLinks li {
-        list-style-type: none;
-
-    }
-
-    #myLinks a {
-        background-color: black;
-        font-size: 1rem;
-        align-content: center;
-    }
-
-    .topnav #myLinks {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
-        margin: 0;
-        padding: 0px;
-    }
-
-    .topnav a {
-        padding: 10px;
-    }
-
-    
-    .topnav a.icon {
-        display: none;
-        
-    }
-    
-    .topnav a:hover {
-        background-color: #ddd;
-        color:forestgreen;
-    }
 
     main {
         text-align: center;
@@ -115,9 +82,10 @@
       font-size: 1rem;
   }
 
-  /* Hide the menu icon on tablet and desktop */
-  #menu-icon {
-    display: none;
+  .logo img {
+      display: none;
   }
+
+  
 
 }

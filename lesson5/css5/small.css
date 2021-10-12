@@ -79,7 +79,6 @@ body {
   }
   /* By floating the icon to the right we can easily make it appear to the right */
   #menu-icon {
-	float: right;
 	cursor: pointer;
 	-moz-transition: all 0.5s;
 	-o-transition: all 0.5s;
@@ -114,6 +113,11 @@ body {
 	text-align: center;
 }
 
+.active {
+    font-style: italic;
+    border-bottom: double #3E000C;
+}
+
 #banner {
     background-color: gold;
     padding: 5px;
@@ -137,7 +141,7 @@ h2 {
 	max-width: 25%;
 	border-radius: 10px;
 	box-shadow: 0 0 10px #111;
-	color: black;
+	color: whitesmoke;
 	padding: 10px;
 	background-color: #456990;
 }
@@ -161,7 +165,7 @@ h2 {
 }
 
 .fiveDayForecast {
-	background-color: #456990;
+	/*background-color: #456990;*/
 	border-radius: 15px;
 	padding: 10px;
 	margin-top: 100px;
@@ -169,7 +173,7 @@ h2 {
 }
 
 table, th, td {
-	border: 1px solid #FCBFB7;
+	border: 1px solid #3E000C;
 	border-radius: 10px;
 	border-collapse: collapse;
 	padding: 1%;
