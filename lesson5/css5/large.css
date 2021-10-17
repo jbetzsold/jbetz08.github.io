@@ -130,14 +130,4 @@
         text-align: center;
     }
 
-    .navbar {
-        flex-direction: row;
-        /* justify-content: space-between; */
-      }
-
-      /* Hide the menu icon on tablet and desktop */
-    #menu-icon {
-        display: none;
-    }
-
 }

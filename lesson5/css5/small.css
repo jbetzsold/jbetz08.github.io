@@ -1,127 +1,75 @@
-/* Here is the page structure for this example */
-/* 
-   <header> This holds all items that will be at the top of the page
-      <div class="navbar"> This is the main navigation bar, including the menu and the logo
-         <div class="logo"> This is the logo for the navbar
-            <a id=menu-icon> This is the hamburger Icon
-         <nav class="main-nav" This is our nav items
-*/
-
 body {
 	font-family: 'Oswald', sans-serif;
-}
-/* NAVBAR STYLES */
-.navbar {
-	/* min-height: 70px; */
-	width: 100%;
-	background-color: #fdfeff;
-  }
-  
-  .main-nav {
-	margin-top: 5px;
-	background-color: #456990;
-	/* This hides the menu until the menu button is clicked */
-	max-height: 0px;
-	overflow: hidden;
-	/* These are used to make a simple transition animation */
-	-moz-transition: max-height 0.5s;
-	-o-transition: max-height 0.5s;
-	-webkit-transition: max-height 0.5s;
-	transition: max-height 0.5s;
-  }
-
-  .logo {
-	display: block;
-	color: whitesmoke;
-	font-size: 1.45em;
-	padding: 1rem;
-	background-color: #A69888;
-  }
-  
-  .logo, .main-nav a {
-	padding: 10px 15px;
-	text-transform: uppercase;
-	text-align: center;
-  }
-
-  .logo em {
-	  font-size: .7rem;
-  }
-
-  .logo h3 {
-	  margin: 0 auto;
-  }
-
-  .logo h6 {
-	  margin: 0 auto;
-	  font-style: italic;
-  }
-
-  .main-nav a {
-	color: #fdfeff;
-	font-size: 1.1em;
-	text-decoration: none;
-	text-align: center;
-	align-items: center;
-  }
-  
-  .main-nav a:hover {
-	color: #718daa;
-  }
-  
-  .main-nav ul {
-	list-style-type: none;
-	margin-bottom: 0;
-	margin-top: 0;
-  }
-  .main-nav li {
-	padding: 1rem;
-  }
-  /* By floating the icon to the right we can easily make it appear to the right */
-  #menu-icon {
-	cursor: pointer;
-	-moz-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-  }
-  #menu-icon:hover {
-   background-color: rgba(24, 26, 26, 0.055);
-  }
- 
-  
-  /* Expanded is the toggled class. IT allows the navbar to show the contents of the hamburger menu when pushed */
-  .expanded {
-	max-height: 25em;
-  }
-  
-  /* This makes the navbar stick to the top of the screen */
-  .sticky {
-	top: 0;
-	position: fixed;
-	width: 100%;
-  }
-  
-  /* Relative makes it so the navbar doesn't push content down when you open the hamburger menu */
-  .relative {
-	position: relative;
-	width: 100%;
-	height: 80px;
-  }
-
-  main {
-	text-align: center;
-}
-
-.active {
-    font-style: italic;
-    border-bottom: double #3E000C;
 }
 
 #banner {
     background-color: gold;
     padding: 5px;
     text-align: center;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #456990;
+	padding: 1rem;
+}
+
+header h1, header h3 {
+	margin: 0;
+	color: whitesmoke;
+}
+
+.motto {
+	font-style: italic;
+}
+
+.navigation {
+	overflow: hidden;
+	display: block;
+	color: whitesmoke;
+	background-color: #3E000C;
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+	margin: auto;
+	text-align: center;
+}
+
+.navigation a {
+	background-color: #3E000C;
+	text-align: center;
+	display: block;
+	padding: 0.8rem 2%;
+	text-decoration: none;
+	color: whitesmoke;
+	border-top: 1px solid black;
+}
+
+.navigation li {
+	display: none;
+}
+
+ul.navigation.responsive li {
+    display: block;
+}
+.navigation li:first-child {
+    display: block;
+}
+
+nav ul li a:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav .active {
+	font-style: italic;
+	border: 1px solid whitesmoke;
+}
+
+nav {
+	margin: 0 auto;
+	display: block;
 }
 
 picture img {
@@ -135,7 +83,7 @@ h2 {
 }
 
 .weatherSummary {
-	position: absolute;
+	position: relative;
 	top: 250px;
 	left: 25px;
 	max-width: 25%;
@@ -188,12 +136,11 @@ table, th, td {
 }
 
 .events h2 {
-	border-bottom: 2px solid #FCBFB7;
+	border-bottom: 2px solid #3E000C;
 	padding: 10px;
 }
 
 .articleInfo {
-	background-color: #456990;
 	border-radius: 15px;
 	padding: 5px;
 	margin-top: 10px;
@@ -211,7 +158,9 @@ table, th, td {
 	max-width: 75%;
 }
 
-
+#contact {
+	font-size: 2.5rem;
+}
 
 .fa {
 	padding: 20px;
@@ -241,9 +190,9 @@ table, th, td {
 	max-width: 35%;
 }
 
-  footer {
-	  color: whitesmoke;
-	  background-color: #A69888;
-	  text-align: center;
-	  padding: 1rem;
-  }
+footer {
+  color: whitesmoke;
+  background-color: #A69888;
+  text-align: center;
+  padding: 1rem;
+}
