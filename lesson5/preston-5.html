@@ -8,15 +8,13 @@
     <link rel="stylesheet" href="css5/medium.css">
     <link rel="stylesheet" href="css5/large.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="img5/faviconweather.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img5/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
         
 </head>
 <body>
     <header>
-        <img src="img5/cloud-lightning.png" alt="site logo">
+        <img src="img5/mountain-logo.jpg" alt="site logo">
         <h1>Southeast Idaho Weather</h1>
         <h3 class="motto">Here for you on a rainy day</h3>
     </header>
@@ -34,19 +32,21 @@
       <main>
   
         <h2>Preston Idaho</h2>
-        <picture>
-                <source srcset="img5/preston-hero-image-medium.jpg" media="(min-width: 643px) and (max-width: 999px)">
-                    <source srcset="img5/preston-hero-image-large.jpg" media="(min-width: 1000px)">
-            <img src="img5/preston-hero-image-small.jpg" alt="small hero img">
-        </picture>
-  
-        <div class="weatherSummary">
-            <h3>Weather Summary</h3>
-            <p>Currently: <span id="current"></span></p>
-            <p>Temperature: <span id="temp"></span> F</p>
-            <p>Wind Chill: <span id="windchill"></span> F</p>
-            <p>Humidity: <span id="humidity"></span>%</p>
-            <p>Wind Speed: <span id="windspeed"></span>MPH</p>
+        <div class="hero">
+            <picture>
+                    <source srcset="img5/preston-hero-image-medium.jpg" media="(min-width: 643px) and (max-width: 999px)">
+                        <source srcset="img5/preston-hero-image-large.jpg" media="(min-width: 1000px)">
+                <img src="img5/preston-hero-image-small.jpg" alt="small hero img">
+            </picture>
+    
+            <div class="weatherSummary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="current">44</span></p>
+                <p>Temperature: <span id="temp">45</span> F</p>
+                <p>Wind Chill: <span id="windchill"></span> F</p>
+                <p>Humidity: <span id="humidity">13</span>%</p>
+                <p>Wind Speed: <span id="windspeed">13</span>MPH</p>
+            </div>
         </div>
         
         <div class="fiveDayForecast">
@@ -130,8 +130,6 @@
         </div>
   
       </main>
-      <br>
-      <br>
       <footer>
           <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>
           <p>
@@ -141,6 +139,7 @@
               <span id="year"></span>.
           </p>
           
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
           <script src="js5/scripts.js"></script>
       </footer>
   </body>

@@ -1,5 +1,6 @@
 body {
 	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
 }
 
 #banner {
@@ -12,13 +13,17 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #456990;
 	padding: 1rem;
+	background-color: white;
+}
+
+header img {
+	width: 300px;
 }
 
 header h1, header h3 {
 	margin: 0;
-	color: whitesmoke;
+	color: black;
 }
 
 .motto {
@@ -68,8 +73,14 @@ nav .active {
 }
 
 nav {
+	font-variant: small-caps;
 	margin: 0 auto;
 	display: block;
+}
+
+main {
+	background-color: white;
+	padding: 15px;
 }
 
 picture img {
@@ -78,25 +89,38 @@ picture img {
 	max-width: 95%;
 }
 
+picture {
+	margin: 15px;
+}
+
 h2 {
 	text-align: center;
 }
 
-.weatherSummary {
+.hero {
 	position: relative;
-	top: 250px;
-	left: 25px;
-	max-width: 25%;
+}
+
+.weatherSummary {
+	width: 100%;
+	max-width: 400px;
+	position: initial;
+	padding: 10px;
+	margin: 0 auto;
 	border-radius: 10px;
 	box-shadow: 0 0 10px #111;
 	color: whitesmoke;
-	padding: 10px;
-	background-color: #456990;
+	background-color: #A69888;
+	text-align: center;
 }
 
 .weatherSummary p {
 	margin: 2px;
-	font-size: 9pt;;
+	font-size: 0.9rem;
+}
+
+.weatherSummary h3 {
+	font-size: 1.2rem;
 }
 
 .hero {
@@ -172,17 +196,17 @@ table, th, td {
 }
 
 .fa-instagram {
-	background: #334E58;
+	background: #456990;
 	color: white;
 }
 
 .fa-facebook {
-	background: #334E58;
+	background: #456990;
 	color: white;
 }
 
 .fa-youtube {
-	background: #334E58;
+	background: #456990;
 	color: white;
 }
 
@@ -192,7 +216,7 @@ table, th, td {
 
 footer {
   color: whitesmoke;
-  background-color: #A69888;
+  background-color: #3E000C;
   text-align: center;
-  padding: 1rem;
+  padding: 15px;
 }

@@ -1,13 +1,11 @@
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+// loading google fonts
+WebFont.load({
+    google: {
+      families: ['Oswald']
     }
-    else {
-        x.style.display = "block";
-    }
-}
+  });
 
+// date objects in js
 const now = new Date();
 const today = now.getDay();
 document.querySelector('#daynumber').textContent = now.getDate();
@@ -82,7 +80,7 @@ switch (month) {
         document.querySelector('#month').textContent = 'Something is messed up with month';
 }
 
-
+// banner alert
 function addElement () {
 
     const newDiv = document.createElement("div");
@@ -97,10 +95,32 @@ function addElement () {
 
 }
 
-
+// hamburger menu
 const hambutton = document.querySelector('#menu-icon');
 const mainnav= document.querySelector('.navigation')
 
 hambutton.addEventListener('click',() => {mainnav.classList.toggle('responsive')},false);
 
 window.onresize =() => {if(window.innerWidth > 643) mainnav.classList.remove('responsive')};
+
+
+// windspeed
+var windSpeed = document.getElementById("windspeed").innerText;
+var temperature = document.getElementById("temp").innerText;
+var wc = document.getElementById("windchill");
+
+function calcWindChill (windSpeed, temperature) {
+    let windChill = 35.74 + (0.6215 * temperature) - (35.75 * (Math.pow(windSpeed, 0.16))) + (0.4275 * temperature) * Math.pow(windSpeed, 0.16);
+
+    if (temperature <= 50 && windSpeed > 3) {
+        return Math.round(windChill);
+    }
+
+    else {
+        return "N/A";
+    }
+}
+
+wc.innerHTML = calcWindChill(windSpeed, temperature);
+
+console.log(calcWindChill(windSpeed, temperature))

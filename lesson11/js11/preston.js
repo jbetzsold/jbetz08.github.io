@@ -195,9 +195,7 @@ fetch(forecastAPI)
     
     WebFont.load({
         google: {
-            families: [
-                'Oswald'
-            ]
+            families: ['Oswald']
         }
     });
     

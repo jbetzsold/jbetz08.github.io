@@ -15,11 +15,25 @@
 
     main {
         text-align: center;
+        max-width: 960px;
+        margin: 0 auto;
     }
     
     h2 {
         font-size: 1.8rem;
         text-align: center;
+    }
+
+    .weatherSummary {
+        width: 150px;
+        float: left;
+        position: absolute;
+        bottom: 2%;
+        left: 8%;
+    }
+
+    .weatherSummary h3 {
+        font-size: 1rem;
     }
 
     .articleInfo img {
@@ -28,9 +42,28 @@
         margin: 7px;
     }
     
+
+    .contactUs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .rcolumn {
+        grid-column: 2/3;
+    }
+
+    .lcolumn {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .lcolumn img {
+        max-width: 85%;
+    }
+
     footer {
         color: white;
-        padding: 5px;
     }
     
     footer p {

@@ -1,79 +1,39 @@
 @media (min-width: 643px) {
-
-    body {
-        font-family: 'Oswald', sans-serif;
-    }
-
-    #banner {
-        background-color: gold;
-        padding: 5px;
-        text-align: center;
-
-    }
     
-    header img {
-        width: 80px;
-        height: auto;
-    }
-    
-    .headings {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .headings h1 {
-        font-size: 1.6rem;
-        margin: 0 0 0 17px;
-    }
-    
-    .m {
-        font-style: italic;
-        letter-spacing: 1pt;
-        color: whitesmoke;
-        margin-left: 20px;
-        font-size: .9rem;
-    }
-    
-    #myLinks li {
-        list-style-type: none;
-
-    }
-
-    #myLinks a {
-        background-color: black;
-        font-size: 1rem;
-        align-content: center;
-    }
-
-    .topnav #myLinks {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
-        margin: 0;
-        padding: 0px;
-    }
-
-    .topnav a {
-        padding: 10px;
-    }
-
-    
-    .topnav a.icon {
+    .navigation li:first-child {
         display: none;
-        
     }
-    
-    .topnav a:hover {
-        background-color: #ddd;
-        color:forestgreen;
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
     }
 
     main {
         text-align: center;
+        max-width: 960px;
+        margin: 0 auto;
     }
     
     h2 {
         font-size: 1.8rem;
         text-align: center;
+    }
+
+    .weatherSummary {
+        width: 150px;
+        float: left;
+        position: absolute;
+        bottom: 2%;
+        left: 8%;
+    }
+
+    .weatherSummary h3 {
+        font-size: 1rem;
     }
 
     .articleInfo img {
@@ -82,15 +42,32 @@
         margin: 7px;
     }
     
+
+    .contactUs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .rcolumn {
+        grid-column: 2/3;
+    }
+
+    .lcolumn {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .lcolumn img {
+        max-width: 85%;
+    }
+
     footer {
-        background-color: forestgreen;
         color: white;
-        padding: 5px;
     }
     
     footer p {
         font-size: 1rem;
         text-align: center;
     }
-
 }
