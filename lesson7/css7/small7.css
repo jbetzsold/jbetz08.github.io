@@ -1,0 +1,252 @@
+h2 {
+    text-align: left;
+}
+
+.imageGallery {
+    padding:15px;
+}
+
+
+.imageGallery div {
+    padding: 15px;
+    margin-top: 30px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+div h3 {
+    font-style: italic;
+    text-align: left;
+}
+
+picture img[data-src] {
+    filter: blur(0.2rem);
+}
+
+picture img {
+    filter: blur(0rem);
+    transition: filter 0.5s;
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+}
+
+#banner {
+    background-color: gold;
+    padding: 5px;
+    text-align: center;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+	background-color: white;
+}
+
+header img {
+	width: 300px;
+}
+
+header h1, header h3 {
+	margin: 0;
+	color: black;
+}
+
+.motto {
+	font-style: italic;
+}
+
+.navigation {
+	overflow: hidden;
+	display: block;
+	color: whitesmoke;
+	background-color: #3E000C;
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+	margin: auto;
+	text-align: center;
+}
+
+.navigation a {
+	background-color: #3E000C;
+	text-align: center;
+	display: block;
+	padding: 0.8rem 2%;
+	text-decoration: none;
+	color: whitesmoke;
+	border-top: 1px solid black;
+}
+
+.navigation li {
+	display: none;
+}
+
+ul.navigation.responsive li {
+    display: block;
+}
+.navigation li:first-child {
+    display: block;
+}
+
+nav ul li a:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav .active {
+	font-style: italic;
+	border: 1px solid whitesmoke;
+}
+
+nav {
+	font-variant: small-caps;
+	margin: 0 auto;
+	display: block;
+}
+
+main {
+	background-color: white;
+	padding: 15px;
+}
+
+picture img {
+	display: block;
+	margin: 0 auto;
+	max-width: 95%;
+}
+
+picture {
+	margin: 15px;
+}
+
+h2 {
+	text-align: center;
+}
+
+.hero {
+	position: relative;
+}
+
+.weatherSummary {
+	width: 100%;
+	max-width: 400px;
+	position: initial;
+	padding: 10px;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #111;
+	color: whitesmoke;
+	background-color: #456990;
+	text-align: center;
+}
+
+.weatherSummary p {
+	margin: 2px;
+	font-size: 0.9rem;
+}
+
+.weatherSummary h3 {
+	font-size: 1.2rem;
+}
+
+.hero {
+	display: block;
+	margin: 0 auto;
+	max-width: 95%;
+	max-height: 80%;
+}
+
+.fiveDayForecast h3 {
+	font-size: 2.5rem;
+	text-align: center;
+	margin: 15px;
+}
+
+.fiveDayForecast {
+	/*background-color: #456990;*/
+	border-radius: 15px;
+	padding: 10px;
+	margin-top: 100px;
+	margin-bottom: 10px;
+}
+
+table, th, td {
+	border: 1px solid #3E000C;
+	border-radius: 10px;
+	border-collapse: collapse;
+	padding: 1%;
+	text-align: center;
+	margin: auto;
+}
+
+.events {
+	background-color: #456990;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.events h2 {
+	border-bottom: 2px solid #3E000C;
+	padding: 10px;
+}
+
+.articleInfo {
+	border-radius: 15px;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+.articleInfo h4 {
+	font-size: 2rem;
+}
+
+.articleInfo img {
+	display: block;
+	margin: 0 auto;
+	max-width: 75%;
+}
+
+#contact {
+	font-size: 2.5rem;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 50px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+.fa-instagram {
+	background: #456990;
+	color: white;
+}
+
+.fa-facebook {
+	background: #456990;
+	color: white;
+}
+
+.fa-youtube {
+	background: #456990;
+	color: white;
+}
+
+.contactUs img {
+	max-width: 35%;
+}
+
+footer {
+  color: whitesmoke;
+  background-color: #3E000C;
+  text-align: center;
+  padding: 15px;
+}

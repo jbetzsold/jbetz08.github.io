@@ -1,0 +1,30 @@
+@media (min-width: 1000px) {
+    
+    h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .imageGallery div:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+    .imageGallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    body {
+        max-width: 960px;
+        margin: 0 auto;
+        background-color: #A69888;
+    }
+
+    main {
+        max-width: 960px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+    }
+}
