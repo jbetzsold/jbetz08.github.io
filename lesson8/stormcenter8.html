@@ -7,35 +7,30 @@
     <link rel="stylesheet" href="css8/small.css">
     <link rel="stylesheet" href="css8/medium.css">
     <link rel="stylesheet" href="css8/large.css">
-    <link rel="stylesheet" href="css8/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="img8/faviconweather.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">        
+    <link rel="shortcut icon" href="img8/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        
 </head>
 <body>
-    <header id="yes">
-        <img src="img8/weatherLogo.png" alt="logo">
-        <section class="headings">
-            <h1>Southeast Idaho Weather</h1>
-            <div class="m">Website Motto: Here for you on a rainy day</div>
-        </section>
+    <header>
+        <img src="img8/mountain-logo.jpg" alt="site logo">
+        <h1>Southeast Idaho Weather</h1>
+        <h3 class="motto">Here for you on a rainy day</h3>
     </header>
-    <nav class="topnav">
-        <!-- anchor element below is a child of topnav  -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <!-- ul element tag below is a child of topnav  -->
-        <ul id="myLinks">
-            <li><a href="">Home</a></li>
-            <li><a href="preston-6.html">Preston</a></li>
-            <li><a href="">Soda Springs</a></li>
-            <li><a href="">Fish Haven</a></li>
-            <li><a class="wayfinder" href="stormcenter.html">Storm Center</a></li>
-            <li><a href="">Gallery</a></li>
+    <nav>
+        <ul class="navigation">
+            <li><a id="menu-icon" href="#">&#9776; Menu</a></li>
+            <li><a>Home</a></li>
+            <li><a>Preston</a></li>
+            <li><a>Soda Springs</a></li>
+            <li><a>Fish Haven</a></li>
+            <li><a class="active">Storm Center</a></li>
+            <li><a>Gallery</a></li>
         </ul>
     </nav>
-    <main>
+      <main>
+  
         <h2>Report a Storm</h2>
 
         <form method="get" action="thanks.html">
@@ -144,7 +139,9 @@
         <br>
         <br>
 
-        <h3>Contact Us</h3>
+        
+  
+        <h3 id="contact">Contact Us</h3>
         <div class="contactUs">
             <div class="rcolumn">
                 <p>
@@ -157,28 +154,28 @@
                     <br>
                     Follow us on social platforms:
                 </p>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-youtube"></a>
+                <a href="https://www.facebook.com/josh.betzsold" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/jbetz08/" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/c/TimcastIRL" class="fa fa-youtube"></a>
                 <br>
             </div>
             <div class="lcolumn">
-                <img src="img8/mapPlaceholder.png" alt="map placeholder">
+                <img src="img8/prestonMap.webp" alt="map placeholder">
             </div>
         </div>
-
-    </main>
-    <footer>
-        <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>
-        <p>
-            <span id="dayofweek"></span>,
-            <span id="daynumber"></span>
-            <span id="month"></span>
-            <span id="year"></span>.
-        </p>
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script src="js8/scripts.js"></script>
-    </footer>
-    
-</body>
+  
+      </main>
+      <footer>
+          <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>
+          <p>
+              <span id="dayofweek"></span>,
+              <span id="daynumber"></span>
+              <span id="month"></span>
+              <span id="year"></span>.
+          </p>
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script src="js8/scripts.js"></script>
+      </footer>
+  </body>
 </html>
