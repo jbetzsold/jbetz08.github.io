@@ -1,13 +1,18 @@
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
+
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
 }
 
+// New js below
+
+// loading google fonts
+WebFont.load({
+    google: {
+      families: ['Oswald']
+    }
+  });
+
+// date objects in js
 const now = new Date();
 const today = now.getDay();
 document.querySelector('#daynumber').textContent = now.getDate();
@@ -82,7 +87,7 @@ switch (month) {
         document.querySelector('#month').textContent = 'Something is messed up with month';
 }
 
-
+// banner alert
 function addElement () {
 
     const newDiv = document.createElement("div");
@@ -97,15 +102,11 @@ function addElement () {
 
 }
 
+// hamburger menu
+const hambutton = document.querySelector('#menu-icon');
+const mainnav= document.querySelector('.navigation')
 
-WebFont.load({
-    google: {
-        families: [
-            'Oswald'
-        ]
-    }
-});
+hambutton.addEventListener('click',() => {mainnav.classList.toggle('responsive')},false);
 
-function adjustRating(rating) {
-    document.getElementById("ratingvalue").innerHTML = rating;
-}
+window.onresize =() => {if(window.innerWidth > 643) mainnav.classList.remove('responsive')};
+
