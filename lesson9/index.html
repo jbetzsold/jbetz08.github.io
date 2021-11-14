@@ -3,78 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preston Idaho Weather</title>
+    <title>Southeast Idaho Weather</title>
     <link rel="stylesheet" href="css9/small.css">
     <link rel="stylesheet" href="css9/medium.css">
     <link rel="stylesheet" href="css9/large.css">
-    <!-- link for hamburger icon and social icons below -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <link rel="shortcut icon" href="img9/faviconweather.ico">       
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img9/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        
 </head>
 <body>
-    <header id="yes">
-        <img src="img9/weatherLogo.png" alt="logo">
-        <section class="headings">
-            <h1>Southeast Idaho Weather</h1>
-            <div class="m">Here for you on a rainy day</div>
-        </section>
+    <header>
+        <img src="img9/mountain-logo.jpg" alt="site logo">
+        <h1>Southeast Idaho Weather</h1>
+        <h3 class="motto">Here for you on a rainy day</h3>
     </header>
-    <nav class="topnav">
-        <!-- anchor element below is a child of topnav  -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <!-- ul element tag below is a child of topnav  -->
-        <ul id="myLinks">
-            <li><a class="wayfinder" href="index.html">Home</a></li>
-            <li><a href="jbetz08.github.io/lesson6/preston-6.html">Preston</a></li>
-            <li><a href="">Soda Springs</a></li>
-            <li><a href="">Fish Haven</a></li>
-            <li><a href="jbetz08.github.io/lesson8/stormcenter.html">Storm Center</a></li>
-            <li><a href="">Gallery</a></li>
+    <nav>
+        <ul class="navigation">
+            <li><a id="menu-icon" href="#">&#9776; Menu</a></li>
+            <li><a class="active">Home</a></li>
+            <li><a>Preston</a></li>
+            <li><a>Soda Springs</a></li>
+            <li><a>Fish Haven</a></li>
+            <li><a>Storm Center</a></li>
+            <li><a>Gallery</a></li>
         </ul>
     </nav>
-    <main>
-        <h2>Southeast Idaho Weather </h2>
+      <main>
+
         <picture>
-                <source srcset="img9/wdd230_image_medium.jpeg" media="(min-width: 643px) and (max-width: 999px)">
-                    <source srcset="img9/wdd230_image_large.jpeg" media="(min-width: 1000px)">
+            <source srcset="img9/wdd230_image_medium.jpeg" media="(min-width: 643px) and (max-width: 999px)">
+                <source srcset="img9/wdd230_image_large.jpeg" media="(min-width: 1000px)">
             <img src="img9/wdd230_image_small.jpeg" alt="small hero img">
         </picture>
 
-        <div class="weatherSummary">
-            <h3>Weather Summary</h3>
-            <p>Currently: Cloudy</p>
-            <p>Temperature: <span id="temp">35</span>F</p>
-            <p>Wind Chill: <span id="windchill"></span></p>
-            <p>Humidity: 23%</p>
-            <p>Precipitation: 11%</p>
-            <p>Wind Speed: <span id="windspeed">11</span> MPH</p>
-        </div>
-        <br>
-        
         <div class="cards"></div>
 
-        <div class="articleInfo">
-            <img src="img9/preston-article-img.jpg" alt="campfire joy">
-            <h4>Article Title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
-                pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
-                Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
-                in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent
-                per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut 
-                vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar vitae dolor.
-                Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer feugiat 
-                faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc. 
-                Phasellus bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis. 
-                Cras pharetra mi tristique sapien vestibulum lobortis. Nam eget bibendum metus, 
-                non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.
-            </p>
-        </div>
-
-
-
-        <h3>Contact Us</h3>
+        
+  
+        <h3 id="contact">Contact Us</h3>
         <div class="contactUs">
             <div class="rcolumn">
                 <p>
@@ -87,37 +54,28 @@
                     <br>
                     Follow us on social platforms:
                 </p>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-youtube"></a>
+                <a href="https://www.facebook.com/josh.betzsold" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/jbetz08/" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/c/TimcastIRL" class="fa fa-youtube"></a>
                 <br>
             </div>
             <div class="lcolumn">
-                <img src="img9/mapPlaceholder.png" alt="map placeholder">
+                <img src="img9/prestonMap.webp" alt="map placeholder">
             </div>
         </div>
-
-    </main>
-    <footer>
-        <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>
-        <p>
-            <span id="dayofweek"></span>,
-            <span id="daynumber"></span>
-            <span id="month"></span>
-            <span id="year"></span>.
-        </p>
-        <script src="js9/scripts.js"></script>
-        <script src="js9/windchill.js"></script>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-        WebFont.load({
-            google: {
-                families: [
-                    'Oswald', 'Sans-serif'
-        ]
-    }
-});
-    </script>
-</body>
+  
+      </main>
+      <footer>
+          <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>
+          <p>
+              <span id="dayofweek"></span>,
+              <span id="daynumber"></span>
+              <span id="month"></span>
+              <span id="year"></span>.
+          </p>
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script src="js9/scripts.js"></script>
+      </footer>
+  </body>
 </html>

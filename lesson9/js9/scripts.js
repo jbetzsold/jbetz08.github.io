@@ -1,13 +1,12 @@
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
+// hamburger menu
+const hambutton = document.querySelector('#menu-icon');
+const mainnav= document.querySelector('.navigation')
 
+hambutton.addEventListener('click',() => {mainnav.classList.toggle('responsive')},false);
+
+window.onresize =() => {if(window.innerWidth > 643) mainnav.classList.remove('responsive')};
+
+// date object
 const now = new Date();
 const today = now.getDay();
 document.querySelector('#daynumber').textContent = now.getDate();
@@ -82,7 +81,7 @@ switch (month) {
         document.querySelector('#month').textContent = 'Something is messed up with month';
 }
 
-
+// pop up message
 function addElement () {
 
     const newDiv = document.createElement("div");
@@ -97,16 +96,16 @@ function addElement () {
 
 }
 
-
-/*WebFont.load({
+// google font api
+WebFont.load({
     google: {
         families: [
             'Oswald', 'Sans-serif'
         ]
     }
-});*/
+});
 
-
+// creating town data from json file
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL)
