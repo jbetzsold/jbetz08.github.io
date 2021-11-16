@@ -3,52 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preston Idaho Weather</title>
+    <title>Southeast Idaho Weather</title>
     <link rel="stylesheet" href="css10/small.css">
     <link rel="stylesheet" href="css10/medium.css">
     <link rel="stylesheet" href="css10/large.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="img10/faviconweather.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">        
+    <link rel="shortcut icon" href="img10/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        
 </head>
 <body>
-    <header id="yes">
-        <img src="img10/weatherLogo.png" alt="logo">
-        <section class="headings">
-            <h1>Southeast Idaho Weather</h1>
-            <div class="m">Here for you on a rainy day</div>
-        </section>
+    <header>
+        <img src="img10/mountain-logo.jpg" alt="site logo">
+        <h1>Southeast Idaho Weather</h1>
+        <h3 class="motto">Here for you on a rainy day</h3>
     </header>
-    <nav class="topnav">
-        <!-- anchor element below is a child of topnav  -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <!-- ul element tag below is a child of topnav  -->
-        <ul id="myLinks">
-            <li><a href="">Home</a></li>
-            <li><a class="wayfinder" href="preston-10.html">Preston</a></li>
-            <li><a href="">Soda Springs</a></li>
-            <li><a href="">Fish Haven</a></li>
-            <li><a href="">Storm Center</a></li>
-            <li><a href="">Gallery</a></li>
+    <nav>
+        <ul class="navigation">
+            <li><a id="menu-icon" href="#">&#9776; Menu</a></li>
+            <li><a>Home</a></li>
+            <li><a class="active">Preston</a></li>
+            <li><a>Soda Springs</a></li>
+            <li><a>Fish Haven</a></li>
+            <li><a>Storm Center</a></li>
+            <li><a>Gallery</a></li>
         </ul>
     </nav>
-    <main>
-        <h2>Preston Idaho</h2>
-        <picture>
-                <source srcset="img10/preston-hero-image-medium.jpg" media="(min-width: 643px) and (max-width: 999px)">
-                    <source srcset="img10/preston-hero-image-large.jpg" media="(min-width: 1000px)">
-            <img src="img10/preston-hero-image-medium.jpg" alt="small hero img">
-        </picture>
+      <main>
 
-        <div class="weatherSummary">
-            <h3>Weather Summary</h3>
-            <p>Currently: <span id="current"></span></p>
-            <p>Temperature: <span id="temp"></span> F</p>
-            <p>Wind Chill: <span id="windchill"></span> F</p>
-            <p>Humidity: <span id="humidity"></span>%</p>
-            <p>Wind Speed: <span id="windspeed"></span>MPH</p>
+        <h2>Preston Idaho</h2>
+        <div class="hero">
+            <picture>
+                    <source srcset="img10/preston-hero-image-medium.jpg" media="(min-width: 643px) and (max-width: 999px)">
+                        <source srcset="img10/preston-hero-image-large.jpg" media="(min-width: 1000px)">
+                <img src="img10/preston-hero-image-small.jpg" alt="small hero img">
+            </picture>
+    
+            <div class="weatherSummary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="current"></span></p>
+                <p>Temperature: <span id="temp"></span> F</p>
+                <p>Wind Chill: <span id="windchill"></span> F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windspeed"></span>MPH</p>
+            </div>
         </div>
         
         <div class="fiveDayForecast">
@@ -76,27 +74,41 @@
                     <td><span id="temp5"></span> F
                 </tr>
             </table>
-
+  
         </div>
+  
+  
+        <section class="events">
+            <h2>Upcoming Events:</h2>
+  
+        </section>
+  
         
         <div class="articleInfo">
-            <img src="img10/preston-article-img.jpg" alt="campfire joy">
-            <h4>Article Title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
-                pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 
-                Donec scelerisque sollicitudin enim eu venenatis. Duis tincidunt laoreet ex, 
-                in pretium orci vestibulum eget. Class aptent taciti sociosqu ad litora torquent
-                per conubia nostra, per inceptos himenaeos. Duis pharetra luctus lacus ut 
-                vestibulum. Maecenas ipsum lacus, lacinia quis posuere ut, pulvinar vitae dolor.
-                Integer eu nibh at nisi ullamcorper sagittis id vel leo. Integer feugiat 
-                faucibus libero, at maximus nisl suscipit posuere. Morbi nec enim nunc. 
-                Phasellus bibendum turpis ut ipsum egestas, sed sollicitudin elit convallis. 
-                Cras pharetra mi tristique sapien vestibulum lobortis. Nam eget bibendum metus, 
-                non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.
+            <img src="img10/preston-article-img.webp" alt="campfire joy">
+            <h4>Preston Idaho | Wikipedia</h4>
+            <p>
+                For several years the city held a "Napoleon Dynamite Festival" in the summer. 
+                Many of the featured festival themes related to events occurring during the film. 
+                For example: Tetherball Tournament, Tater Tot Eating Contest, Moon Boot Dance, 
+                Impersonation, Look-A-Like Contest, Football Throwing Contest and more. In 2004 
+                there was a single day event that drew approximately 300 people. Although this was 
+                not a large crowd, it did help raise $1,500 for the Preston School District Education 
+                Foundation. In 2005 an estimated 6,000 people attended the event, but that number 
+                dropped to an estimated 400 people in 2006. The 2007 and 2008 event was held along with 
+                the 'That Famous Preston Night Rodeo' in Preston. There are no plans for reviving the 
+                event. 'That Famous Preston Night Rodeo' is usually held in late July, along with 
+                the Franklin County parade. The rodeo's name ('That Famous Preston Night Rodeo') comes 
+                from it being the first rodeo held during night time. It includes many events such as 
+                bull riding, barrel racing, and other popular events. The Franklin county parade includes 
+                floats and advertisements of local businesses. The rodeo and parade remain one of the 
+                town's most popular local events and traditions.
             </p>
         </div>
 
-        <h3>Contact Us</h3>
+        
+  
+        <h3 id="contact">Contact Us</h3>
         <div class="contactUs">
             <div class="rcolumn">
                 <p>
@@ -109,29 +121,29 @@
                     <br>
                     Follow us on social platforms:
                 </p>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-youtube"></a>
+                <a href="https://www.facebook.com/josh.betzsold" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/jbetz08/" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/c/TimcastIRL" class="fa fa-youtube"></a>
                 <br>
             </div>
             <div class="lcolumn">
-                <img src="img10/mapPlaceholder.png" alt="map placeholder">
+                <img src="img10/prestonMap.webp" alt="map placeholder">
             </div>
         </div>
-
-    </main>
-    <footer>
-        <p>&copy; Southeast Idaho Weather | Attributions | <a href="https://openweathermap.org">Open Weather Map</a> | Josh Betzsold </p>
-        <p>
-            <span id="dayofweek"></span>,
-            <span id="daynumber"></span>
-            <span id="month"></span>
-            <span id="year"></span>.
-        </p>
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script src="js10/scripts.js"></script>
-        <script src="js10/preston-weatherAPI.js"></script>
-    </footer>
-    
-</body>
+  
+      </main>
+      <footer>
+          <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>
+          <p>
+              <span id="dayofweek"></span>,
+              <span id="daynumber"></span>
+              <span id="month"></span>
+              <span id="year"></span>.
+          </p>
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script src="js10/scripts.js"></script>
+          <script src="js10/preston-weatherAPI.js"></script>
+      </footer>
+  </body>
 </html>
