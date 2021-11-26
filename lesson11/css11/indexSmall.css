@@ -127,78 +127,73 @@ footer {
   padding: 15px;
 }
 
+picture img {
+    display: block;
+    margin: 0 auto;
+    max-width: 95%;
+}
 
+h2 {
+    text-align: center;
+}
 
+.cards img {
+    max-width: 300px;
+    border: 1px solid black;
+}
 
-    picture img {
-        display: block;
-        margin: 0 auto;
-        max-width: 95%;
-    }
+.Fish.Haven, .Preston, .Soda.Springs{
+    padding: 10px;
+}
 
-    h2 {
-        text-align: center;
-    }
+.Fish.Haven h2 {
+    margin-bottom: 0;
+    text-align: center;
+}
 
-    
+.Preston h2 {
+    margin-bottom: 0;
+    text-align: center;
+}
 
-    .cards img {
-        max-width: 300px;
-        border: 1px solid black;
-    }
+.Soda.Springs h2 {
+    margin-bottom: 0;
+    text-align: center;
+}
 
-    .Fish.Haven, .Preston, .Soda.Springs{
-        padding: 10px;
-    }
+.cards section {
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
 
-    .Fish.Haven h2 {
-        margin-bottom: 0;
-        text-align: center;
-    }
-
-    .Preston h2 {
-        margin-bottom: 0;
-        text-align: center;
-    }
-
-    .Soda.Springs h2 {
-        margin-bottom: 0;
-        text-align: center;
-    }
-
-    .cards section {
-        border-radius: 15px;
-        margin: 5px;
-        padding: 10px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    section div p {
-        font-style: italic;
-    }
+section div p {
+    font-style: italic;
+}
 
 /* old styles below */
 
-    .articleInfo {
-        padding: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+.articleInfo {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
-    }
+}
 
-    .articleInfo h4 {
-        font-size: 2rem;
-    }
+.articleInfo h4 {
+    font-size: 2rem;
+}
 
-    .articleInfo img {
-        display: block;
-        margin: 0 auto;
-        max-width: 55%;
-        border: 1px solid black;
-    }
+.articleInfo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 55%;
+    border: 1px solid black;
+}
 
 
 

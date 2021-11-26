@@ -39,6 +39,7 @@
     .articleInfo img {
         float: right;
         max-width: 50%;
+        max-height: 310px;
         margin: 7px;
     }
     
