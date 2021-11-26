@@ -3,53 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soda Springs Idaho - Southeast Idaho Weather</title>
+    <title>Soda Springs</title>
     <link rel="stylesheet" href="css11/prestonSmall.css">
     <link rel="stylesheet" href="css11/prestonMedium.css">
     <link rel="stylesheet" href="css11/prestonLarge.css">
-    <link rel="stylesheet" href="css11/normalize.css">
-    <!-- link for hamburger icon and social icons below -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="img11/faviconweather.ico">        
+    <link rel="shortcut icon" href="img11/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        
 </head>
 <body>
     <header id="yes">
-        <img src="img11/weatherLogo.png" alt="logo">
-        <section class="headings">
-            <h1>Southeast Idaho Weather</h1>
-            <div class="m">Here for you on a rainy day</div>
-        </section>
+        <img src="img11/mountain-logo.jpg" alt="site logo">
+        <h1>Southeast Idaho Weather</h1>
+        <h3 class="motto">Here for you on a rainy day</h3>
     </header>
-    <nav class="topnav">
-        <!-- anchor element below is a child of topnav  -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <!-- ul element tag below is a child of topnav  -->
-        <ul id="myLinks">
+    <nav>
+        <ul class="navigation">
+            <li><a id="menu-icon" href="#">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
-            <li><a class="wayfinder" href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="sodasprings.html" class="active">Soda Springs</a></li>
             <li><a href="fishhaven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
-    <main>
-        <h2>Soda Springs Idaho</h2>
-        <picture>
-                <source srcset="img11/preston-hero-image-medium.jpg" media="(min-width: 643px) and (max-width: 999px)">
-                    <source srcset="img11/preston-hero-image-large.jpg" media="(min-width: 1000px)">
-            <img src="img11/preston-hero-image-medium.jpg" alt="small hero img">
-        </picture>
+      <main>
 
-        <div class="weatherSummary">
-            <h3>Weather Summary</h3>
-            <p>Currently: <span id="current"></span></p>
-            <p>Temperature: <span id="temp"></span> F</p>
-            <p>Wind Chill: <span id="windchill"></span> F</p>
-            <p>Humidity: <span id="humidity"></span>%</p>
-            <p>Wind Speed: <span id="windspeed"></span>MPH</p>
+        <h2>Soda Springs Idaho</h2>
+        <div class="hero">
+            <picture>
+                    <source srcset="img11/preston-hero-image-medium.jpg" media="(min-width: 643px) and (max-width: 999px)">
+                        <source srcset="img11/preston-hero-image-large.jpg" media="(min-width: 1000px)">
+                <img src="img11/preston-hero-image-small.jpg" alt="small hero img">
+            </picture>
+    
+            <div class="weatherSummary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="current"></span></p>
+                <p>Temperature: <span id="temp"></span> F&#176;</p>
+                <p>Wind Chill: <span id="windchill"></span> F&#176;</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windspeed"></span>MPH</p>
+            </div>
         </div>
         
         <div class="fiveDayForecast">
@@ -70,46 +67,46 @@
                     <td><span id="imagesrc5"></span> <img id="icon5"></td>
                 </tr>
                 <tr>
-                    <td><span id="temp1"></span> F
-                    <td><span id="temp2"></span> F
-                    <td><span id="temp3"></span> F
-                    <td><span id="temp4"></span> F
-                    <td><span id="temp5"></span> F
+                    <td><span id="temp1"></span> F&#176;
+                    <td><span id="temp2"></span> F&#176;
+                    <td><span id="temp3"></span> F&#176;
+                    <td><span id="temp4"></span> F&#176;
+                    <td><span id="temp5"></span> F&#176;
                 </tr>
             </table>
-
+  
         </div>
-
+  
+  
         <section class="events">
             <h2>Upcoming Events:</h2>
-
+  
         </section>
+  
         
         <div class="articleInfo">
             <img src="img11/preston-article-img.webp" alt="campfire joy">
             <h4>Soda Springs Idaho | Wikipedia</h4>
             <p>
-                The city is named for the hundreds of natural springs of carbonated water that 
-                are located in and around the city. The springs were well known to Native 
-                Americans and were a famous landmark along the Oregon Trail in the middle 19th 
-                century. Today the city is also known as the location of the Soda Springs Geyser, 
-                which was unleashed in 1934 when "town fathers" were looking for hot water for a 
-                "hot pool" bathing attraction. Instead they drilled into a chamber of highly 
-                pressurized carbon dioxide gas and cold water and the geyser was released. After 
-                running for weeks, and flooding the downtown area, it was capped and manually 
-                released when requested as a tourist attraction. Now it is let loose every hour on 
-                the hour by a timed release valve. Its height and volume have not decreased after 
-                many years. There are viewing platforms at either end of the travertine mound where 
-                the geyser erupts. Interpretive signs are located on the platforms explaining this 
-                phenomenon. Soda Springs is also the location of one of the Ground Observer Corps sites.
+                The city is named for the hundreds of natural springs of carbonated water that are located in and around the city. 
+                The springs were well known to Native Americans and were a famous landmark along the Oregon Trail in the middle 19th 
+                century. Today the city is also known as the location of the Soda Springs Geyser, which was unleashed in 1934 when 
+                "town fathers" were looking for hot water for a "hot pool" bathing attraction. Instead they drilled into a chamber of 
+                highly pressurized carbon dioxide gas and cold water and the geyser was released. After running for weeks, and 
+                flooding the downtown area, it was capped and manually released when requested as a tourist attraction. Now it is let 
+                loose every hour on the hour by a timed release valve. Its height and volume have not decreased after many years. There 
+                are viewing platforms at either end of the travertine mound where the geyser erupts. Interpretive signs are located on 
+                the platforms explaining this phenomenon. Soda Springs is also the location of one of the Ground Observer Corps sites.
             </p>
         </div>
 
-        <h3>Contact Us</h3>
+        
+  
+        <h3 id="contact">Contact Us</h3>
         <div class="contactUs">
             <div class="rcolumn">
                 <p>
-                    123 Main St. Preston, ID
+                    123 Main St. Soda Springs, ID
                     <br>
                     seiweather@gmail.com 
                     <br>
@@ -118,28 +115,28 @@
                     <br>
                     Follow us on social platforms:
                 </p>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-youtube"></a>
+                <a href="https://www.facebook.com/josh.betzsold" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/jbetz08/" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/c/TimcastIRL" class="fa fa-youtube"></a>
                 <br>
             </div>
             <div class="lcolumn">
                 <img src="img11/sodaspringsMap.webp" alt="map placeholder">
             </div>
         </div>
-
-    </main>
-    <footer>
-        <p>&copy; Southeast Idaho Weather | Attributions | <a href="https://openweathermap.org">Open Weather Map</a> | Josh Betzsold </p>
-        <p>
-            <span id="dayofweek"></span>,
-            <span id="daynumber"></span>
-            <span id="month"></span>
-            <span id="year"></span>.
-        </p>
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script src="js11/sodasprings.js"></script>
-    </footer>
-    
-</body>
+  
+      </main>
+      <footer>
+          <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>
+          <p>
+              <span id="dayofweek"></span>,
+              <span id="daynumber"></span>
+              <span id="month"></span>
+              <span id="year"></span>.
+          </p>
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script src="js11/sodasprings.js"></script>
+      </footer>
+  </body>
 </html>
