@@ -23,7 +23,7 @@ header img {
 
 header h1, header h3 {
 	margin: 0;
-	color: black;
+	color:rgb(76, 77, 65);
 }
 
 .motto {
@@ -127,63 +127,61 @@ footer {
   padding: 15px;
 }
 
-/* old styles below */
-
-    form {
-        font-size: 20px;
-    }
-    
-    form fieldset {
-        border: 3px double #456990;
-        padding: 15px;
-    }
-
-    form legend {
-    font-weight: bold;
+form {
     font-size: 20px;
-    letter-spacing: 1.5px;
-    padding: 5px;
-    }
+}
 
-    form label.top, form div {
-        display: block;
-    }
-
-    form label.top input, form label.top select {
-        display: block;
-        border: solid 1px #999;
-        padding: .75rem;
-        width: 80%;
-        background-color: #f8f8f8;
-    }
-
-    .indanger {
-        line-height: 30px;
-    }
-
-    .surroundDanger .indanger {
-        vertical-align: middle;
-    }
-
-    .req {
-        color: #3E000C;
-    }
-
-    h2 {
+form fieldset {
     border: 3px double #456990;
-    text-align: left;
     padding: 15px;
-    }
+}
 
-    .comments {
-    max-width: 100%;
-    }
+form legend {
+font-weight: bold;
+font-size: 20px;
+letter-spacing: 1.5px;
+padding: 5px;
+}
 
-    form input.submitBtn {
-    border: none;
-    background-color: #A69888;
-    color: white;
-    border-radius: 5px;
+form label.top, form div {
+    display: block;
+}
+
+form label.top input, form label.top select {
+    display: block;
+    border: solid 1px #999;
     padding: .75rem;
-    }
+    width: 80%;
+    background-color: #f8f8f8;
+}
+
+.indanger {
+    line-height: 30px;
+}
+
+.surroundDanger .indanger {
+    vertical-align: middle;
+}
+
+.req {
+    color: #3E000C;
+}
+
+h2 {
+	/*border: 3px double #456990;*/
+	text-align: left;
+	padding: 15px;
+}
+
+.comments {
+	max-width: 100%;
+}
+
+form input.submitBtn {
+	border: none;
+	background-color: #A69888;
+	color: white;
+	border-radius: 5px;
+	padding: .75rem;
+}
 
