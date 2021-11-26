@@ -3,39 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery Southeast Idaho Weather</title>
+    <title>Preston Idaho Weather</title>
     <link rel="stylesheet" href="css11/gallerySmall.css">
     <link rel="stylesheet" href="css11/galleryMedium.css">
     <link rel="stylesheet" href="css11/galleryLarge.css">
-    <link rel="stylesheet" href="css11/normalize.css">
-    <!-- link for hamburger icon and social icons below -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <link rel="shortcut icon" href="img11/faviconweather.ico">       
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img11/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        
 </head>
 <body>
-    <header id="yes">
-        <img src="img11/weatherLogo.png" alt="logo">
-        <section class="headings">
-            <h1>Southeast Idaho Weather</h1> 
-            <div class="m">Here for you on a rainy day</div>
-        </section>
+    <header>
+        <img src="img11/mountain-logo.jpg" alt="site logo">
+        <h1>Southeast Idaho Weather</h1>
+        <h3 class="motto">Here for you on a rainy day</h3>
     </header>
-    <nav class="topnav">
-        <!-- anchor element below is a child of topnav  -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <!-- ul element tag below is a child of topnav  -->
-        <ul id="myLinks">
+    <nav>
+        <ul class="navigation">
+            <li><a id="menu-icon" href="#">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
             <li><a href="sodasprings.html">Soda Springs</a></li>
             <li><a href="fishhaven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
-            <li><a class="wayfinder" href="gallery.html">Gallery</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
         </ul>
     </nav>
-    <main>
+      <main>
+  
         <h2>Weather Gallery</h2>
 
         <section class="imageGallery">
@@ -113,9 +108,8 @@
             
 
         </section>
-        
-        
-        <h3>Contact Us</h3>
+  
+        <h3 id="contact">Contact Us</h3>
         <div class="contactUs">
             <div class="rcolumn">
                 <p>
@@ -128,28 +122,28 @@
                     <br>
                     Follow us on social platforms:
                 </p>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-youtube"></a>
+                <a href="https://www.facebook.com/josh.betzsold" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/jbetz08/" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/c/TimcastIRL" class="fa fa-youtube"></a>
                 <br>
             </div>
             <div class="lcolumn">
                 <img src="img11/prestonMap.webp" alt="map placeholder">
             </div>
         </div>
-
-    </main>
-    <footer>
-        <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>
-        <p>
-            <span id="dayofweek"></span>,
-            <span id="daynumber"></span>
-            <span id="month"></span>
-            <span id="year"></span>.
-        </p>
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script src="js11/gallery.js"></script>
-    </footer>
-    
-</body>
+  
+      </main>
+      <footer>
+          <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>
+          <p>
+              <span id="dayofweek"></span>,
+              <span id="daynumber"></span>
+              <span id="month"></span>
+              <span id="year"></span>.
+          </p>
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script src="js11/gallery.js"></script>
+      </footer>
+  </body>
 </html>
