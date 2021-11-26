@@ -1,3 +1,4 @@
+
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=90f7c646aab0312f6906d70603fbc085"
 fetch(apiURL)
     .then((response) => response.json())
