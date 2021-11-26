@@ -3,60 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Southeast Idaho Storm Center</title>
+    <title>Storm Center</title>
     <link rel="stylesheet" href="css11/stormcenterSmall.css">
     <link rel="stylesheet" href="css11/stormcenterMedium.css">
     <link rel="stylesheet" href="css11/stormcenterLarge.css">
-    <link rel="stylesheet" href="css11/normalize.css">
-    <!-- link for hamburger icon and social icons below -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="img11/faviconweather.ico">        
+    <link rel="shortcut icon" href="img11/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        
 </head>
 <body>
-    <header id="yes">
-        <img src="img11/weatherLogo.png" alt="logo">
-        <section class="headings">
-            <h1>Southeast Idaho Weather</h1>
-            <div class="m">Here for you on a rainy day</div>
-        </section>
+    <header>
+        <img src="img11/mountain-logo.jpg" alt="site logo">
+        <h1>Southeast Idaho Weather</h1>
+        <h3 class="motto">Here for you on a rainy day</h3>
     </header>
-    <nav class="topnav">
-        <!-- anchor element below is a child of topnav  -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <!-- ul element tag below is a child of topnav  -->
-        <ul id="myLinks">
+    <nav>
+        <ul class="navigation">
+            <li><a id="menu-icon" href="#">&#9776; Menu</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
             <li><a href="sodasprings.html">Soda Springs</a></li>
             <li><a href="fishhaven.html">Fish Haven</a></li>
-            <li><a class="wayfinder" href="stormcenter.html">Storm Center</a></li>
+            <li><a href="stormcenter.html" class="active">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
-    <main>
+      <main>
+  
         <h2>Report a Storm</h2>
 
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Your Contact Information</legend>
-                <label>Full Name<span class="req">(required)</span>
+                <label id="top">Full Name<span class="req">(required)</span>
                     <br>
                     <input type="text" pattern="[a-z A-Z]{5,}" class="form-control" name="name" title="Must be 5 or more alphabet characters." required>
                 </label>
                 <br>
-                <label>Email
+                <label id="top">Email
                     <br>
                     <input type="email" name="email" placeholder="name@gmail.com">
                 </label>
                 <br>
-                <label>Phone Number<span class="req">(required)</span>
+                <label id="top">Phone Number<span class="req">(required)</span>
                     <br>
                     <input type="tel" name="tel" required>
                 </label>
                 <br>
-                <label>Zip Code<span class="req">(required)</span>
+                <label id="top">Zip Code<span class="req">(required)</span>
                     <br>
                     <input type="number" name="zip" required>
                 </label>
@@ -65,11 +60,11 @@
 
             <fieldset>
                 <legend>Storm Information</legend>
-                <label>Storm Date<span class="req">(required)</span>
+                <label id="top">Storm Date<span class="req">(required)</span>
                     <input type="date" name="date" required>
                 </label>
                 <br>
-                <label for="storm">Storm Type
+                <label id="top" for="storm">Storm Type
                     <input list="storms" name="storm" id="storm">
                 </label>
                 <datalist id="storms">
@@ -102,10 +97,10 @@
                 </div>
                 <br>
                 <div>
-                    <label>Storm Region
+                    <label id="top">Storm Region
                         <br>
                         <select name="region">
-                            <option value="">-- Select Region &#9662;</option>
+                            <option value="select" select disabled>Select Region &#9662;</option>
                             <option value="preston">Preston</option>
                             <option value="sodasprings">Soda Springs</option>
                             <option value="fishhaven">Fish Haven</option>
@@ -115,19 +110,22 @@
             </fieldset>
             <br>
 
-            <fieldset class="indanger">
+            <fieldset class="danger">
                 <legend>Are you in danger?</legend>
-                <label>
-                    <input type="radio" name="danger" value="no"> No
-                </label>
-                <br>
-                <label>
-                    <input type="radio" name="danger" value="maybe"> Maybe
-                </label>
-                <br>
-                <label>
-                    <input type="radio" name="danger" value="Yes"> Yes
-                </label>
+                <div class="surroundDanger">
+                    <label class="indanger">
+                        <input type="radio" name="danger" value="no">No
+                    </label>
+                    <br>
+                    <label class="indanger">
+                        <input type="radio" name="danger" value="maybe">Maybe
+                    </label>
+                    <br>
+                    <label class="indanger">
+                        <input type="radio" name="danger" value="Yes">Yes
+                    </label>
+                </div>
+                
                 <br>
             </fieldset>
             <br>
@@ -144,7 +142,9 @@
         <br>
         <br>
 
-        <h3>Contact Us</h3>
+        
+  
+        <h3 id="contact">Contact Us</h3>
         <div class="contactUs">
             <div class="rcolumn">
                 <p>
@@ -157,28 +157,28 @@
                     <br>
                     Follow us on social platforms:
                 </p>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-youtube"></a>
+                <a href="https://www.facebook.com/josh.betzsold" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/jbetz08/" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/c/TimcastIRL" class="fa fa-youtube"></a>
                 <br>
             </div>
             <div class="lcolumn">
                 <img src="img11/prestonMap.webp" alt="map placeholder">
             </div>
         </div>
-
-    </main>
-    <footer>
-        <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>
-        <p>
-            <span id="dayofweek"></span>,
-            <span id="daynumber"></span>
-            <span id="month"></span>
-            <span id="year"></span>.
-        </p>
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script src="js11/stormcenter.js"></script>
-    </footer>
-    
-</body>
+  
+      </main>
+      <footer>
+          <p>&copy; Southeast Idaho Weather | Attributions | Josh Betzsold </p>
+          <p>
+              <span id="dayofweek"></span>,
+              <span id="daynumber"></span>
+              <span id="month"></span>
+              <span id="year"></span>.
+          </p>
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script src="js11/stormcenter.js"></script>
+      </footer>
+  </body>
 </html>

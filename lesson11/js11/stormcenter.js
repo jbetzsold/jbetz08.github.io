@@ -1,13 +1,12 @@
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
+// hamburger menu
+const hambutton = document.querySelector('#menu-icon');
+const mainnav= document.querySelector('.navigation')
 
+hambutton.addEventListener('click',() => {mainnav.classList.toggle('responsive')},false);
+
+window.onresize =() => {if(window.innerWidth > 643) mainnav.classList.remove('responsive')};
+
+// date object
 const now = new Date();
 const today = now.getDay();
 document.querySelector('#daynumber').textContent = now.getDate();
@@ -31,7 +30,6 @@ switch (today) {
         document.querySelector('#dayofweek').textContent = 'Thursday';
         break;
     case 5:
-        document.body.onload = addElement;
         document.querySelector('#dayofweek').textContent = 'Friday';
         break;
     case 6:
@@ -83,29 +81,16 @@ switch (month) {
 }
 
 
-function addElement () {
-
-    const newDiv = document.createElement("div");
-    newDiv.setAttribute("id", "banner");
-
-    const newContent = document.createTextNode("Saturday = Preston Pancakes in the Park! 9:00 a.m.\n Saturday at the city park pavilion.");
-    newDiv.appendChild(newContent);
-
-    const currentDiv = document.getElementById("yes");
-
-    document.body.insertBefore(newDiv, currentDiv);
-
-}
-
-
+// google font loader
 WebFont.load({
     google: {
         families: [
-            'Oswald'
+            'Oswald', 'Sans-serif'
         ]
     }
 });
 
+// storm rating logic
 function adjustRating(rating) {
     document.getElementById("ratingvalue").innerHTML = rating;
 }
