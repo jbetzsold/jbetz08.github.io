@@ -190,7 +190,9 @@ function addElement () {
 // google font loader
 WebFont.load({
     google: {
-        families: ['Oswald', 'Sans-serif']
+        families: [
+            'Oswald', 'Sans-serif'
+        ]
     }
 });
     

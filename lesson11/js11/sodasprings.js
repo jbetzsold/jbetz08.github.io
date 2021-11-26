@@ -186,7 +186,7 @@ window.onresize =() => {if(window.innerWidth > 643) mainnav.classList.remove('re
     WebFont.load({
         google: {
             families: [
-                'Oswald'
+                'Oswald', 'Sans-serif'
             ]
         }
     });
