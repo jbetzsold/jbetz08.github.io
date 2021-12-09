@@ -151,10 +151,11 @@
         </p>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="js/join.js"></script>
+        <script type="module" src="js/realtimeDB.js"></script>
         <script type="module">
             // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
-            import { getDatabase } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js";
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics.js";
             // TODO: Add SDKs for Firebase products that you want to use
             // https://firebase.google.com/docs/web/setup#available-libraries
           
@@ -168,18 +169,13 @@
               storageBucket: "vineyard-chamber-commerce.appspot.com",
               messagingSenderId: "871628535447",
               appId: "1:871628535447:web:b51e9a2038716295b6dbd2",
-              measurementId: "G-CWQHCS0FL8"
+              measurementId: "${config.measurementId}"
             };
           
             // Initialize Firebase
             const app = initializeApp(firebaseConfig);
-            const database = getDatabase();
-    
-            
-    
-    
+            const analytics = getAnalytics(app);
           </script>
-        <script type="module" src="js/realtimeDB.js"></script>
     </footer>
     
 </body>

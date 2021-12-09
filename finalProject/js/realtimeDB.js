@@ -1,6 +1,5 @@
 // DB updates
 
-
 var firstName = document.getElementById('fname').value;
 var lastName = document.getElementById('lname').value;
 var email = document.getElementById('email').value;
