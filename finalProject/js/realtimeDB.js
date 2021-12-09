@@ -6,7 +6,7 @@ var email = document.getElementById('email').value;
 var businessName = document.getElementById('businessName').value;
 
 
-//import { getDaabase, ref, set } from "firebase/database";
+//import { getDatabase, ref, set } from "firebase/database";
 
 function writeUserData(firstName, lastName, email, businessName) {
     console.log("writing to DB")
