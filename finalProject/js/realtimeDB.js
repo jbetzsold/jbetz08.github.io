@@ -31,11 +31,12 @@ const database = getDatabase(app);
 const saveData = () => {
   const user = {
     email: document.getElementById('email').value,
-    businessName: document.getElementById('businessName'),
-    firstName: document.getElementById('fname'),
-    lastName: document.getElementById('lname')
+    businessName: document.getElementById('businessName').value,
+    firstName: document.getElementById('fname').value,
+    lastName: document.getElementById('lname').value
   };
   writeUserData(user);
+  window.location.replace('thanks.html')
 
 }
 
@@ -45,5 +46,6 @@ button.addEventListener('click', saveData);
 
 function writeUserData(data) {
   const db = getDatabase();
-  set(ref(db, 'users/' + 5), data);
+  set(ref(db, 'users/'), data);
 }
+
