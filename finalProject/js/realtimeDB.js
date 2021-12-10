@@ -47,7 +47,7 @@ button.addEventListener('click', saveData);
 
 function writeUserData(data) {
   const db = getDatabase();
-  const newPostRef = push(ref(db, 'users'));
+  const newPostRef = push(ref(database, 'users'));
   set(newPostRef, data);
 }
 
