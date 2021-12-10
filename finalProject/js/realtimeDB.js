@@ -13,14 +13,13 @@ import {
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCg12cVH1hTNPPp-eCEu0J2xrzWmIWyUlY",
-  authDomain: "vineyard-chamber-commerce.firebaseapp.com",
-  databaseURL: "https://vineyard-chamber-commerce-default-rtdb.firebaseio.com",
-  projectId: "vineyard-chamber-commerce",
-  storageBucket: "vineyard-chamber-commerce.appspot.com",
-  messagingSenderId: "871628535447",
-  appId: "1:871628535447:web:b51e9a2038716295b6dbd2",
-  measurementId: "${config.measurementId}"
+  apiKey: "AIzaSyB1ag2_d0pNCavQCJGDV6TV9W8WCZ9ew1s",
+  authDomain: "testdbvineyard.firebaseapp.com",
+  databaseURL: "https://testdbvineyard-default-rtdb.firebaseio.com",
+  projectId: "testdbvineyard",
+  storageBucket: "testdbvineyard.appspot.com",
+  messagingSenderId: "818416250548",
+  appId: "1:818416250548:web:bf275c64b762c20d1bf1e1"
 };
 
 // Initialize Firebase
@@ -47,7 +46,7 @@ button.addEventListener('click', saveData);
 
 function writeUserData(data) {
   const db = getDatabase();
-  //const newPostRef = push(ref(database, 'users'));
-  set(ref(db, 'users/' + 5), data);
+  const newPostRef = push(ref(database, 'users'));
+  set(newPostRef, data);
 }
 
