@@ -46,6 +46,6 @@ button.addEventListener('click', saveData);
 
 function writeUserData(data) {
   const db = getDatabase();
-  set(ref(db, 'users/'), data);
+  set(ref(db, 'users'), data);
 }
 
