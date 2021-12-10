@@ -50,3 +50,5 @@ function writeUserData(data) {
   set(newPostRef, data);
 }
 
+const businessNumber = database.ref.once()
+
