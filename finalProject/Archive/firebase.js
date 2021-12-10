@@ -6,20 +6,15 @@ import {
   ref,
   set,
 } from 'https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCg12cVH1hTNPPp-eCEu0J2xrzWmIWyUlY",
-  authDomain: "vineyard-chamber-commerce.firebaseapp.com",
-  databaseURL: "https://vineyard-chamber-commerce-default-rtdb.firebaseio.com",
-  projectId: "vineyard-chamber-commerce",
-  storageBucket: "vineyard-chamber-commerce.appspot.com",
-  messagingSenderId: "871628535447",
-  appId: "1:871628535447:web:b51e9a2038716295b6dbd2",
-  measurementId: "${config.measurementId}"
+  apiKey: 'AIzaSyC2HOVWA34E08YYYQJIWXYKXGMOBgDbfJI',
+  authDomain: 'test-9-4f2bd.firebaseapp.com',
+  projectId: 'test-9-4f2bd',
+  storageBucket: 'test-9-4f2bd.appspot.com',
+  messagingSenderId: '663886791926',
+  appId: '1:663886791926:web:5b658331eb0c204e29d8d7',
+  measurementId: '${config.measurementId}',
 };
 
 // Initialize Firebase
@@ -27,7 +22,6 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const database = getDatabase(app);
 
-// save data to DB function
 const saveData = () => {
   const user = {
     email: document.getElementById('email').value,
@@ -36,11 +30,10 @@ const saveData = () => {
     lastName: document.getElementById('lname')
   };
   writeUserData(user);
-
-}
+};
 
 // eventListener on click
-const button = document.getElementById('submitButton');
+const button = document.getElementById('awesomeButton');
 button.addEventListener('click', saveData);
 
 function writeUserData(data) {

@@ -1,0 +1,61 @@
+{
+    "Businesses": [
+        {
+            "name": "Umami Japanese BBQ",
+            "phone": "801-380-4446",
+            "website": "umamijapanesebbq.com",
+            "address": "568 N Mill Road #107",
+            "logo": "http://umamijapanesebbq.com/images/umami/umami-nav-horizontal.png" 
+        },
+        {
+            "name": "Happy Dragon Chinese Express",
+            "phone": "801-655-5222",
+            "website": "www.gohappydragons.com",
+            "address": "773 E Mill Road Unit E",
+            "logo": "https://static.wixstatic.com/media/34a6d2_bcff65d327bd41c9b956a958eb0220c4~mv2.png/v1/fill/w_246,h_193,al_c,lg_1,q_85/HAPPY%20DRAGON%20logo%20transparent%20medium.webp"
+        },
+        {
+            "name": "Digital Respons-Ability",
+            "phone": "n/a",
+            "website": "https://respons-ability.net",
+            "address": "online company only",
+            "logo": "https://secureservercdn.net/198.71.233.26/c69.058.myftpupload.com/wp-content/uploads/2020/08/respons-ability-logo-415x132-1.png"
+        },
+        {
+            "name": "Guardian Pest & Lawn",
+            "phone": "801-225-6000",
+            "website": "http://guardianpest.com",
+            "address": "111 N Geneva Road",
+            "logo": "https://www.guardianpest.com/images/logos/Logo2.png"
+        },
+        {
+            "name": "Quality Carports, Inc",
+            "phone": "801-406-9508",
+            "website": "www.highqualitycarports.com",
+            "address": "441 E 1750 N Ste. A",
+            "logo": "https://www.highqualitycarports.com/wp-content/uploads/2019/04/logo-main-white.png"
+        },
+        {
+            "name": "Ready2Teach",
+            "phone": "800-333-9387",
+            "website": "www.ready2teach.com",
+            "address": "441 E 1750 N Ste. A",
+            "logo": "https://uploads-ssl.webflow.com/5fd878a76cae3d61684e1dde/5fe36ac4d04785c936c87f72_ready2teach%201.svg"
+        },
+        {
+            "name": "Coconut Cove, LLC",
+            "phone": "801-704-5567",
+            "website": "http://www.coconutcoveplay.com",
+            "address": "496 East 1750 North Suite C",
+            "logo": "https://www.coconutcoveplay.com/wp-content/uploads/2016/12/CClogoFInal.gif"
+        },
+        {
+            "name": "Elm Rose Designs, LLC",
+            "phone": "n/a",
+            "website": "http://www.etsy.com/shop/elmrosedesigns",
+            "address": "n/a",
+            "logo": "https://i.etsystatic.com/isla/7ff1f7/39543336/isla_500x500.39543336_crwswrd1.jpg?version=0"
+        }
+
+    ]
+}

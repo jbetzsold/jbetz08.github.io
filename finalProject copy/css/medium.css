@@ -1,0 +1,60 @@
+@media (min-width: 600px) {
+    body {
+        margin: 0 auto;
+    }
+
+    .topnav #myLinks {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+        margin: 0;
+        padding: 0;
+    }
+
+    .topnav a {
+        padding: 10px;
+    }
+
+    .topnav a.icon {
+        display: none;
+    }
+
+    .weatherSummary {
+        position: absolute;
+        top: 345px;
+        left: 50px;
+        max-width: 25%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #111;
+        color: white;
+        padding: 10px;
+        background-color: #e07a5f;
+        font-size: .9rem;
+    }
+
+    table {
+        max-width: 599px;
+    }
+
+    .callToAction {
+        margin: 0 auto;
+    }
+
+    #contactInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #cityCounsel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+    }
+
+    .fa-list, .fa-th {
+        float: right;
+    }
+}

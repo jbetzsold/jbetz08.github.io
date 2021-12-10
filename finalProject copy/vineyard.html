@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vineyard UT Chamber of Commerce | City of Vineyard</title>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- link for hamburger icon and social icons below -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="shortcut icon" href="images/favicon.ico">       
+</head>
+<body>
+    <header>
+        <img src="images/vineyardLogo.png" alt="logo">
+        <section class="headings">
+            <h1>Vineyard Chamber of Commerce</h1>
+            <div class="m">Live Happy, Get Involved</div>
+        </section>
+    </header>
+    <nav class="topnav">
+        <!-- anchor element below is a child of topnav  -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <!-- ul element tag below is a child of topnav  -->
+        <ul id="myLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="wayfinder" href="vineyard.html">Vineyard</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Historical and Current Demographic</h2>
+        <picture>
+                <source srcset="images/mountainHeroMed.jpg" media="(min-width: 600px) and (max-width: 799px)">
+                    <source srcset="images/mountainHeroLarge.jpg" media="(min-width: 800px)">
+            <img src="images/mountainHeroSmall.jpg" alt="small hero img">
+        </picture>
+        
+
+        <h3 id="special">Upcoming Events</h3>
+        <section class="cityEvents">
+            <div id="eventLeft">
+                <img src="images/womanInNature.jpg" alt="woman in nature">
+
+            </div>
+
+            
+            <div id="eventRight">
+                <div>
+                    <h4>Apr 26 - May 7</h4>
+                    <p>Spring Cleanup</p>
+                    <br>
+                </div>
+                <div>
+                    <h4>May 1</h4>
+                    <p>Earth Day Project</p>
+                    <br>
+                </div>
+                <div>
+                    <h4>May 1 - May 31</h4>
+                    <p>Bike Month</p>
+                    <br>
+                </div>
+                <div>
+                    <h4>Jun 3 - Jun 5</h4>
+                    <p>Heritage Days</p>
+                    <br>
+                </div>
+                <div>
+                    <h4>Oct 25</h4>
+                    <p>Boo-A-Palooza</p>
+                    <br>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        
+        <div class="contactUs">
+            <h3>Contact Us</h3>
+            <div class="lcolumn">
+                <p>
+                    125 S Main St. Vineyard, UT 84059
+                    <br>
+                    <br>
+                    info@vineyardtown.com 
+                    <br>
+                    <br>
+                    801-226-1929
+                    <br>
+                    <br>
+                </p>
+            </div>
+            <div class="rcolumn">
+                <p>Follow us on social platforms:</p>
+                <a href="https://www.facebook.com/VineyardCity" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <br>
+            </div>
+                
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; Vineyard Chamber of Commerce | Attributions | Josh Betzsold </p>
+        <p>
+            <span id="dayofweek"></span>,
+            <span id="daynumber"></span>
+            <span id="month"></span>
+            <span id="year"></span>.
+        </p>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/vineyard.js"></script>
+    </footer>
+    
+</body>
+</html>

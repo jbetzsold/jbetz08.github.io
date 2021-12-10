@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vineyard UT Chamber of Commerce | Contact</title>
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- link for hamburger icon and social icons below -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="shortcut icon" href="images/favicon.ico">       
+</head>
+<body>
+    <header>
+        <img src="images/vineyardLogo.png" alt="logo">
+        <section class="headings">
+            <h1>Vineyard Chamber of Commerce</h1>
+            <div class="m">Live Happy, Get Involved</div>
+        </section>
+    </header>
+    <nav class="topnav">
+        <!-- anchor element below is a child of topnav  -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <!-- ul element tag below is a child of topnav  -->
+        <ul id="myLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vineyard.html">Vineyard</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a class="wayfinder" href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Contact Information</h2>
+        <picture>
+                <source srcset="images/mountainHeroMed.jpg" media="(min-width: 600px) and (max-width: 799px)">
+                    <source srcset="images/mountainHeroLarge.jpg" media="(min-width: 800px)">
+            <img src="images/mountainHeroSmall.jpg" alt="small hero img">
+        </picture>
+
+
+        <h3>Basic Contact Information</h3>
+        <section id="contactInfo">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28315.45797451996!2d-111.76702531239945!3d40.30689593955677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d84a502349725%3A0xe3003b89f4ef8ebe!2sVineyard%2C%20UT!5e0!3m2!1sen!2sus!4v1617816556384!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div>
+                <p>
+                    125 S Main St. Vineyard, UT 84059
+                    <br>
+                    <br>
+                    info@vineyardtown.com 
+                    <br>
+                    <br>
+                    801-226-1929
+                    <br>
+                    <br>
+                </p>
+                <p>Follow us on social platforms:</p>
+                <a href="https://www.facebook.com/VineyardCity" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <br>
+            </div>
+        </section>
+
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <label>First Name(required)
+                    <br>
+                    <input type="text" pattern="[a-z A-Z]{5,}" id="fname" name="fname" title="Must be 5 or more alphabet characters." required>
+                </label>
+                <br>
+                <label>Last Name(required)
+                    <br>
+                    <input type="text" pattern="[a-z A-Z]{5,}" id="lname" name="lname" title="Must be 5 or more alphabet characters." required>
+                </label>
+                <br>
+                <label>Email(required)
+                    <br>
+                    <input type="email" name="email" placeholder="name@gmail.com" required>
+                </label>
+                <br>
+                <label>Cell Phone
+                    <br>
+                    <input type="tel" name="tel" required>
+                </label>
+                <br>
+                <label>Comment
+                    <br>
+                    <input type="text" pattern="[a-z A-Z]{5,}" id="comment" name="comment" title="Must be 5 or more alphabet characters.">
+                </label>
+                <br>
+                <input type="submit" value="Submit" class="submitBtn">
+            </fieldset>
+            <br>
+        </form>
+
+        <section id="cityCounsel">
+            <div>
+                <h3>City Counsel Members</h3>
+                <ul>
+                    <li>Julie Fullmer - Mayor</li>
+                    <li>Tyce Flake - Council member</li>
+                    <li>Cristy Welsh - Council member</li>
+                    <li>Chris Judd - Council member</li>
+                    <li>John Earnest - Council member</li>
+                </ul>
+            </div>
+            <div>
+                <img src="images/cityCounselPic.jpeg" alt="city counsel group photo">
+            </div>
+            
+        </section>
+
+        
+    </main>
+    <footer>
+        <p>&copy; Vineyard Chamber of Commerce | Attributions | Josh Betzsold </p>
+        <p>
+            <span id="dayofweek"></span>,
+            <span id="daynumber"></span>
+            <span id="month"></span>
+            <span id="year"></span>.
+        </p>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/contact.js"></script>
+    </footer>
+    
+</body>
+</html>
