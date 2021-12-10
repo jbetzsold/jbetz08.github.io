@@ -36,7 +36,7 @@ const saveData = () => {
     lastName: document.getElementById('lname').value
   };
   writeUserData(user);
-  window.location.replace('thanks.html')
+  //window.location.replace('thanks.html')
 
 }
 
